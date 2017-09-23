@@ -11,8 +11,8 @@ class GameState:
     self.half = 1
     self.ticks_left = halfsecs/ticktime
     # Create the teams from the rosters
-    self.hometeam = Team("Name", "home", 'lua/roster1.txt')
-    self.awayteam = Team("xXx_TeAm_NaMe_xXx", "away", 'lua/roster2.txt')
+    self.hometeam = Team("Name", "home", 'roster1.txt')
+    self.awayteam = Team("xXx_TeAm_NaMe_xXx", "away", 'roster2.txt')
     self.clock = Clock(halfsecs, ticktime)
     self.field = Field("sss")
     self.down = 1
@@ -72,9 +72,9 @@ gs = GameState(300.0, 0.1)
 
 while True:
 
-  with open('lua/state1.txt','w') as sone:
+  with open('state1.txt','w') as sone:
     sone.write("DECLARE OFFENSE\n\n")
-    with open('lua/roster1.txt') as rone:
+    with open('roster1.txt') as rone:
       for line in rone:
         sone.write(line)
     sone.write("\n")
@@ -84,9 +84,9 @@ while True:
     sone.write(gs.get_ticks_left()+",TICK\n")
     sone.write(gs.get_half()+",HALF\n")
 
-  with open('lua/state2.txt','w') as stwo:
+  with open('state2.txt','w') as stwo:
     stwo.write("DECLARE DEFENSE\n\n")
-    with open('lua/roster2.txt') as rtwo:
+    with open('roster2.txt') as rtwo:
       for line in rtwo:
         stwo.write(line)
     stwo.write("\n")
@@ -97,9 +97,7 @@ while True:
     stwo.write(gs.get_half()+",HALF\n")
 
   subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', 'dumb'],shell=False)
-  subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', 'dumb'],shell=False)
+  subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', 'dumb'],shell=False)
 
 
   gs.update('')
-
-
