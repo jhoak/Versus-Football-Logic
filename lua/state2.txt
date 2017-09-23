@@ -1,4 +1,4 @@
-DELCARE DEFENSE
+DECLARE DEFENSE
 
 playername, playernumber, loc_x (mYard), loc_y (mYard)
 PNAME, 57, -340, -349
@@ -11,8 +11,8 @@ PNAME, 57, 96, 3, 45, 34, 23
 ...
 ...
 
-2 DOWN
-3 TOGO
-37 TOTD
-3452 TICK
-1 HALF
+2,DOWN
+3,TOGO
+37,TOTD
+3452,TICK
+1,HALF
