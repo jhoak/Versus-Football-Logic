@@ -1,0 +1,21 @@
+MOVE OFFENSE 
+
+playername, playernumber, speed, hit, kick, disp, recv, pass, locX, locY
+PNAME, 57, 96, 3, 45, 34, 23
+...
+...
+...
+
+playername, playernumber, locX, locY
+PNAME, 57, 96, 3, 45, 34, 23
+...
+...
+...
+
+BALL {playernumber, OR location vector (x,y,z)}
+
+2 DOWN
+3 TOGO
+37 TOTD
+3452 TICK
+1 HALF
