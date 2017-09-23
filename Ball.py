@@ -18,5 +18,6 @@ class Ball:
 
   def update(self):
     if held:
-      x = Player
+      # TODO
+      pass
     x += x_speed

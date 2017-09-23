@@ -3,11 +3,14 @@ import os, sys
 
 class Team:
 
-  def __init__(self, teamname, roster):
+  def __init__(self, teamname, home_or_away, roster):
     # Get players from file
     with open(roster) as p:
       self.name = teamname
+      self.side = home_or_away
+
       self.Players = []
+
       for stats in p:
         stats.split(',')
-        self.Players.append(Player(teamname, stats))
+        self.Players.append(Player(home_or_away, stats))

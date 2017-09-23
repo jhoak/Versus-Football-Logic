@@ -8,25 +8,26 @@ class GameState:
 
   def __init__(self, halfsecs, ticktime):
 
-    self.hometeam = Team("roster1.txt")
-    self.awayteam = Team("roster2.txt")
+    self.hometeam = Team("lua/roster1.txt")
+    self.awayteam = Team("lua/roster2.txt")
     self.clock = Clock(halfsecs, ticktime)
     self.field = Field()
 
   def update(self, commands):
     # Update the field
     self.field.update()
-    
+
     # Tick the Clock
     self.clock.update()
     # Mom~, is it over yet?
     if self.clock.time <= 0:
-      if self.half = 1:
+      if self.half == 1:
         # Let's all go to the lobby;
         # Let's all go to the lobby;
         # Let's all go to the lobby
         # To get ourselves a treat.
         DO_HALFTIME()
+        self.half = 2
       else:
         # GG
         # NO RE
@@ -48,5 +49,5 @@ class GameState:
 gs = GameState(300.0, 0.1)
 
 while True:
-
+  LUA_PING_GOES_HERE
   gs.update()

@@ -1,8 +1,8 @@
 class Player:
   
-  def __init__(self, teamname, stats):
+  def __init__(self, home_or_away, stats):
     # Stats
-    self.team = teamname
+    self.side = home_or_away
     self.name = stats[0]
     self.number = stats[1]
     self.speed = stats[2]
