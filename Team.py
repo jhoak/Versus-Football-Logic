@@ -13,4 +13,8 @@ class Team:
 
       for stats in p:
         stats.split(',')
-        self.Players.append(Player(home_or_away, stats))
+        try:
+          stats[1]
+          self.Players.append(Player(home_or_away, stats))
+        except:
+          pass

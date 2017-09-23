@@ -11,10 +11,10 @@ class GameState:
     self.half = 1
     self.ticks_left = halfsecs/ticktime
     # Create the teams from the rosters
-    self.hometeam = Team("lua/roster1.txt")
-    self.awayteam = Team("lua/roster2.txt")
+    self.hometeam = Team("Name", "home", 'lua/roster1.txt')
+    self.awayteam = Team("xXx_TeAm_NaMe_xXx", "away", 'lua/roster2.txt')
     self.clock = Clock(halfsecs, ticktime)
-    self.field = Field()
+    self.field = Field("sss")
     self.down = 1
     self.to_go = 10
     self.yardline = 20
@@ -62,41 +62,44 @@ class GameState:
     return str(100-self.yardline)
 
   def get_ticks_left(self):
-    return str(ticks_left)
+    return str(self.ticks_left)
 
   def get_half(self):
-    return str(half)
+    return str(self.half)
 
 
 gs = GameState(300.0, 0.1)
 
 while True:
 
-  with open('lua/state1.txt') as sone:
+  with open('lua/state1.txt','w') as sone:
     sone.write("DECLARE OFFENSE\n\n")
     with open('lua/roster1.txt') as rone:
       for line in rone:
         sone.write(line)
     sone.write("\n")
-    sone.write(gs.field.get_down()+",DOWN\n")
-    sone.write(gs.field.get_to_go()+",TOGO\n")
-    sone.write(gs.field.get_to_td()+",TOTD\n")
-    sone.write(gs.field.get_ticks_left()+",TICK\n")
-    sone.write(gs.field.get_half()+",HALF\n")
+    sone.write(gs.get_down()+",DOWN\n")
+    sone.write(gs.get_to_go()+",TOGO\n")
+    sone.write(gs.get_to_td()+",TOTD\n")
+    sone.write(gs.get_ticks_left()+",TICK\n")
+    sone.write(gs.get_half()+",HALF\n")
 
-  with open('lua/state2.txt') as stwo:
+  with open('lua/state2.txt','w') as stwo:
     stwo.write("DECLARE DEFENSE\n\n")
     with open('lua/roster2.txt') as rtwo:
       for line in rtwo:
         stwo.write(line)
     stwo.write("\n")
-    stwo.write(gs.field.get_down()+",DOWN\n")
-    stwo.write(gs.field.get_to_go()+",TOGO\n")
-    stwo.write(gs.field.get_to_td()+",TOTD\n")
-    stwo.write(gs.field.get_ticks_left()+",TICK\n")
-    stwo.write(gs.field.get_half()+",HALF\n")
+    stwo.write(gs.get_down()+",DOWN\n")
+    stwo.write(gs.get_to_go()+",TOGO\n")
+    stwo.write(gs.get_to_td()+",TOTD\n")
+    stwo.write(gs.get_ticks_left()+",TICK\n")
+    stwo.write(gs.get_half()+",HALF\n")
 
-  subprocess.call()
-  gs.update()
+  subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', 'dumb'],shell=False)
+  subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', 'dumb'],shell=False)
+
+
+  gs.update('')
 
 
