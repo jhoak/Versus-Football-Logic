@@ -19,15 +19,15 @@ local function read_team_players()
     local stats = split(player, ",")
     local player_table = {}
     player_table["name"] = stats[1]
-    player_table["number"] =  stats[2]
-    player_table["speed"] = stats[3]
-    player_table["hit"] =  stats[4]
-    player_table["kick"] = stats[5]
-    player_table["disp"] =  stats[6]
-    player_table["recv"] = stats[7]
-    player_table["pass"] =  stats[8]
-    player_table["x"] =  stats[9]
-    player_table["y"] =  stats[10]
+    player_table["number"] =  tonumber(stats[2])
+    player_table["speed"] = tonumber(stats[3])
+    player_table["hit"] =  tonumber(stats[4])
+    player_table["kick"] = tonumber(stats[5])
+    player_table["disp"] =  tonumber(stats[6])
+    player_table["recv"] = tonumber(stats[7])
+    player_table["pass"] =  tonumber(stats[8])
+    player_table["x"] =  tonumber(stats[9])
+    player_table["y"] =  tonumber(stats[10])
     player = io.read("*line")
     table.insert(players,player_table)
   end
@@ -36,11 +36,11 @@ end
 
 local function game_state()
   local game = {}
-  game["down"] = split(io.read("*line"), ",")[1]
-  game["togo"] = split(io.read("*line"), ",")[1]
-  game["totd"] = split(io.read("*line"), ",")[1]
-  game["tick"] = split(io.read("*line"), ",")[1]
-  game["half"] = split(io.read("*line"), ",")[1]
+  game["down"] = tonumber(split(io.read("*line"), ",")[1])
+  game["togo"] = tonumber(split(io.read("*line"), ",")[1])
+  game["totd"] = tonumber(split(io.read("*line"), ",")[1])
+  game["tick"] = tonumber(split(io.read("*line"), ",")[1])
+  game["half"] = tonumber(split(io.read("*line"), ",")[1])
   return game
 end
 
@@ -88,9 +88,9 @@ local function read_opposing_players()
     local stats = split(player, ",")
     local player_table = {}
     player_table["name"] = stats[1]
-    player_table["number"] =  stats[2]
-    player_table["x"] =  stats[3]
-    player_table["y"] =  stats[4]
+    player_table["number"] = tonumber(stats[2])
+    player_table["x"] = tonumber(stats[3])
+    player_table["y"] = tonumber(stats[4])
     player = io.read("*line")
     table.insert(players,player_table)
   end
@@ -101,12 +101,12 @@ local function read_ball()
   local ball = split(io.read("*line")," ")
   io.read("*line")
   if #ball == 2 then
-    return ball[2]
+    return tonumber(ball[2])
   else
     local vector = {}
-    vector["x"] = ball[2]
-    vector["y"] = ball[3]
-    vector["z"] = ball[4]
+    vector["x"] = tonumber(ball[2])
+    vector["y"] = tonumber(ball[3])
+    vector["z"] = tonumber(ball[4])
     return vector
   end
 end
