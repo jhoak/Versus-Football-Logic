@@ -11,6 +11,12 @@ class Ball:
     self.z_speed = 0
 
   def setvector(self, x, y, z):
-    elf.x_speed = 0
+    held = False
+    self.x_speed = 0
     self.y_speed = 0
     self.z_speed = 0
+
+  def update(self):
+    if held:
+      x = Player
+    x += x_speed
