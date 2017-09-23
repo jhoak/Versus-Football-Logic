@@ -16,43 +16,40 @@ function readstate(infile)
   -- read a newline
   io.read("*line")
   local output = {}
+  print(state_type)
 
   if state_type == "DECLARE OFFENSE" then
-    print("Declare Offense")
     output["players"] = read_team_players()
   end
 
   if state_type == "DECLARE DEFENSE" then
-    print("Declare Defense")
     output["opponent"] = read_opposing_players()
     output["players"] = read_team_players()
   end
 
   if state_type == "MOVE OFFENSE" then
-    print("Move Offense")
     output["players"] = read_team_players()
     output["opponent"] = read_opposing_players()
-    output["ball"] = read_ball
+    output["ball"] = read_ball()
   end
   
   if state_type == "MOVE DEFENSE" then
-    print("Move Defense")
     output["opponent"] = read_opposing_players()
     output["players"] = read_team_players()
-    output["ball"] = read_ball
+    output["ball"] = read_ball()
   end
 
-
+  output["game"] = game_state()
   return output
 end
 
 function game_state()
   local game = {}
-  game["down"] = split(io.read("*line"), ",")[0]
-  game["togo"] = split(io.read("*line"), ",")[0]
-  game["totd"] = split(io.read("*line"), ",")[0]
-  game["tick"] = split(io.read("*line"), ",")[0]
-  game["half"] = split(io.read("*line"), ",")[0]
+  game["down"] = split(io.read("*line"), ",")[1]
+  game["togo"] = split(io.read("*line"), ",")[1]
+  game["totd"] = split(io.read("*line"), ",")[1]
+  game["tick"] = split(io.read("*line"), ",")[1]
+  game["half"] = split(io.read("*line"), ",")[1]
   return game
 end
 
@@ -74,6 +71,7 @@ function read_team_players()
     player_table["x"] =  stats[9]
     player_table["y"] =  stats[10]
     player = io.read("*line")
+    table.insert(players,player_table)
   end
   return players
 end
@@ -109,7 +107,8 @@ function read_ball()
   end
 end
 
-print(inspect(readstate("state1.txt")))
-print(inspect(readstate("state2.txt")))
-print(inspect(readstate("state3.txt")))
-print(inspect(readstate("state4.txt")))
+--Tests
+--print(inspect(readstate("state1.txt")))
+--print(inspect(readstate("state2.txt")))
+--print(inspect(readstate("state3.txt")))
+--print(inspect(readstate("state4.txt")))
