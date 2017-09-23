@@ -1,10 +1,24 @@
 DECLARE OFFENSE
 
-playername, playernumber, speed, hit, kick, disp, recv, pass
-PNAME, 57, 96, 3, 45, 34, 23
-...
-...
-...
+Domisquith Bartolimeo,14,100,100,100,100,100,100
+Domisquith Bartolimeo,15,100,100,100,100,100,100
+Domisquith Bartolimeo,16,100,100,100,100,100,100
+Domisquith Bartolimeo,17,100,100,100,100,100,100
+Domisquith Bartolimeo,18,100,100,100,100,100,100
+Domisquith Bartolimeo,19,100,100,100,100,100,100
+Domisquith Bartolimeo,20,100,100,100,100,100,100
+Domisquith Bartolimeo,21,100,100,100,100,100,100
+Domisquith Bartolimeo,22,100,100,100,100,100,100
+Domisquith Bartolimeo,23,100,100,100,100,100,100
+Domisquith Bartolimeo,24,100,100,100,100,100,100
+Domisquith Bartolimeo,25,100,100,100,100,100,100
+Domisquith Bartolimeo,26,100,100,100,100,100,100
+Domisquith Bartolimeo,27,100,100,100,100,100,100
+Domisquith Bartolimeo,28,100,100,100,100,100,100
+Domisquith Bartolimeo,29,100,100,100,100,100,100
+Domisquith Bartolimeo,30,100,100,100,100,100,100
+Domisquith Bartolimeo,31,100,100,100,100,100,100
+Domisquith Bartolimeo,32,100,100,100,100,100,100
 
 2,DOWN
 3,TOGO
