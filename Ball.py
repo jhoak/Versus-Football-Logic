@@ -5,6 +5,8 @@ class Ball:
   x_speed=y_speed=z_speed=0
   # A held flag
   held = False
+  # Passed
+  passed = False
 
   def __init__(self):
     pass
