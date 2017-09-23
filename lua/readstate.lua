@@ -1,6 +1,8 @@
 local inspect = require('inspect')
 
-function split(inputstr, sep)
+local readstate = {}
+
+local function split(inputstr, sep)
   local t={} ; i=1
   for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
           t[i] = str
@@ -9,14 +11,46 @@ function split(inputstr, sep)
   return t
 end
 
+local function read_team_players()
+  local players = {}
+  local player = io.read("*line")
 
-function readstate(infile)
+  while (player ~= "") do
+    local stats = split(player, ",")
+    local player_table = {}
+    player_table["name"] = stats[1]
+    player_table["number"] =  stats[2]
+    player_table["speed"] = stats[3]
+    player_table["hit"] =  stats[4]
+    player_table["kick"] = stats[5]
+    player_table["disp"] =  stats[6]
+    player_table["recv"] = stats[7]
+    player_table["pass"] =  stats[8]
+    player_table["x"] =  stats[9]
+    player_table["y"] =  stats[10]
+    player = io.read("*line")
+    table.insert(players,player_table)
+  end
+  return players
+end
+
+local function game_state()
+  local game = {}
+  game["down"] = split(io.read("*line"), ",")[1]
+  game["togo"] = split(io.read("*line"), ",")[1]
+  game["totd"] = split(io.read("*line"), ",")[1]
+  game["tick"] = split(io.read("*line"), ",")[1]
+  game["half"] = split(io.read("*line"), ",")[1]
+  return game
+end
+
+function readstate.readstate(infile)
   io.input(infile)
   local state_type = io.read("*line")
   -- read a newline
   io.read("*line")
   local output = {}
-  print(state_type)
+  output["status"] = state_type
 
   if state_type == "DECLARE OFFENSE" then
     output["players"] = read_team_players()
@@ -43,40 +77,10 @@ function readstate(infile)
   return output
 end
 
-function game_state()
-  local game = {}
-  game["down"] = split(io.read("*line"), ",")[1]
-  game["togo"] = split(io.read("*line"), ",")[1]
-  game["totd"] = split(io.read("*line"), ",")[1]
-  game["tick"] = split(io.read("*line"), ",")[1]
-  game["half"] = split(io.read("*line"), ",")[1]
-  return game
-end
 
-function read_team_players()
-  local players = {}
-  local player = io.read("*line")
 
-  while (player ~= "") do
-    local stats = split(player, ",")
-    local player_table = {}
-    player_table["name"] = stats[1]
-    player_table["number"] =  stats[2]
-    player_table["speed"] = stats[3]
-    player_table["hit"] =  stats[4]
-    player_table["kick"] = stats[5]
-    player_table["disp"] =  stats[6]
-    player_table["recv"] = stats[7]
-    player_table["pass"] =  stats[8]
-    player_table["x"] =  stats[9]
-    player_table["y"] =  stats[10]
-    player = io.read("*line")
-    table.insert(players,player_table)
-  end
-  return players
-end
 
-function read_opposing_players()
+local function read_opposing_players()
   local players = {}
   local player = io.read("*line")
 
@@ -93,7 +97,7 @@ function read_opposing_players()
   return players
 end
 
-function read_ball()
+local function read_ball()
   local ball = split(io.read("*line")," ")
   io.read("*line")
   if #ball == 2 then
@@ -107,6 +111,7 @@ function read_ball()
   end
 end
 
+return readstate
 --Tests
 --print(inspect(readstate("state1.txt")))
 --print(inspect(readstate("state2.txt")))
