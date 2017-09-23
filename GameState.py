@@ -49,5 +49,14 @@ class GameState:
 gs = GameState(300.0, 0.1)
 
 while True:
-  LUA_PING_GOES_HERE
+
+  with open('lua/state1.txt') as sone:
+    sone.write("DECLARE OFFENSE\n\n")
+    with open('lua/roster1.txt') as rone:
+      for line in rone:
+        sone.write(line)
+    sone.write("\n")
+    sone.write(gs.field.get_down())
+
+
   gs.update()
