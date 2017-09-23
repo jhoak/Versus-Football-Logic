@@ -1,17 +1,16 @@
 class Ball:
-  def __init__(self):
-    # Position
-    self.x = 0
-    self.y = 0
-    self.z = 0
+  # Position
+  x=y=z=0
+  # Speed vector
+  x_speed=y_speed=z_speed=0
+  # A held flag
+  held = False
 
-    # Movement vector
-    self.x_speed = 0
-    self.y_speed = 0
-    self.z_speed = 0
+  def __init__(self):
+    pass
 
   def setvector(self, x, y, z):
-    held = False
+    self.held = False
     self.x_speed = 0
     self.y_speed = 0
     self.z_speed = 0
