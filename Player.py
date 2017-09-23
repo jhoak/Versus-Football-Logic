@@ -1,7 +1,8 @@
 class Player:
   
-  def __init__(self, stats):
+  def __init__(self, teamname, stats):
     # Stats
+    self.team = teamname
     self.name = stats[0]
     self.number = stats[1]
     self.speed = stats[2]
@@ -17,18 +18,6 @@ class Player:
 
     # Flags!
     self.divestate = False
-
-  def do_action(self, action, params):
-    if action == 'MOVE':
-      self.move(params[0])
-    elif action == 'DIVE':
-      self.dive(params[0])
-    elif action == 'THROW':
-      self.throw(params[0], params[1], params[2])
-    elif action == 'PUNT':
-      self.punt()
-    elif action == 'FG':
-      self.fieldgoal()
 
   def move(self, dir):
     if 'N' in dir:
@@ -55,4 +44,4 @@ class Player:
       return
     # TODO: Solve for arc
     self.Ball.setvector(2, 2, 2)
-    
+
