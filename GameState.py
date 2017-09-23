@@ -3,7 +3,7 @@ from Clock import Clock
 from Team import Team
 from Ball import Ball
 
-class gamestate:
+class GameState:
   # Start in the first half
   half = 1
 
@@ -12,5 +12,6 @@ class gamestate:
     self.halfmins = halfmins
     self.hometeam = Team("roster.txt")
     self.awayteam = Team("roster.txt")
-    
 
+  def update(self):
+    
