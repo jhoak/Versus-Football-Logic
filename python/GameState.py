@@ -11,8 +11,8 @@ class GameState:
     self.half = 1
     self.ticks_left = halfsecs/ticktime
     # Create the teams from the rosters
-    self.hometeam = Team("Name", "home", 'roster1.txt')
-    self.awayteam = Team("xXx_TeAm_NaMe_xXx", "away", 'roster2.txt')
+    self.hometeam = Team("Name", "home", 'roster1.txt', 'dumb')
+    self.awayteam = Team("xXx_TeAm_NaMe_xXx", "away", 'roster2.txt', 'dumb')
     self.clock = Clock(halfsecs, ticktime)
     self.field = Field("sss")
     self.down = 1
@@ -27,7 +27,7 @@ class GameState:
     self.clock.update()
     self.ticks_left-=1
     # Mom~, is it over yet?
-    if self.clock.time <= 0:
+    if self.clock.time <= 0 and not self.ball_in_play:
       if self.half == 1:
         # Let's all go to the lobby;
         # Let's all go to the lobby;
@@ -67,62 +67,86 @@ class GameState:
   def get_half(self):
     return str(self.half)
 
-  def get_offernse(self)
+  def get_offense(self)
     if hometeam.hasball:
       return hometeam
     return awayteam
 
-  def get_defense_roster(self)
+  def get_defense(self)
     if hometeam.hasball:
-      return 'roster2.txt'
-    return 'roster1.txt'
+      return awayteam
+    return hometeam
+
+#--------------------------------------------------
+
+def footer(file, gs, offense, defense):    
+  file.write("\n")
+  file.write(gs.get_down()+",DOWN\n")
+  file.write(gs.get_to_go()+",TOGO\n")
+  file.write(gs.get_to_td()+",TOTD\n")
+  file.write(gs.get_ticks_left()+",TICK\n")
+  file.write(gs.get_half()+",HALF\n")
+  file.write(str(offense.score)+",OFFENSIVE_SCORE\n")
+  file.write(str(defense.score)+",DEFENSIVE_SCORE")
 
 #--------------------------------------------------
 
 gs = GameState(300.0, 0.1)
-ai_1 = 'dumb'
-ai_2 = 'dumb'
 
 while True:
 
+  active_players = []
+
+  offense = gs.get_offense()
+  defense = gs.get_defense()
 
   with open('state1.txt','w') as sone:
     sone.write("DECLARE OFFENSE\n\n")
-    with open(gs.get_offense_roster()) as rone:
+    with open(offense.roster) as rone:
       for line in rone:
         sone.write(line)
-    sone.write("\n")
-    sone.write(gs.get_down()+",DOWN\n")
-    sone.write(gs.get_to_go()+",TOGO\n")
-    sone.write(gs.get_to_td()+",TOTD\n")
-    sone.write(gs.get_ticks_left()+",TICK\n")
-    sone.write(gs.get_half()+",HALF\n")
+    footer(sone, gs, offense, defense)
 
-  subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', ai_1],shell=False)
 
-  with open('result.txt') as res:
+  subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', offense.ai],shell=False)
+
+  with open('result1.txt') as res:
+
     for line in res:
       line.split(',')
-      gs.line[2]
-
+      offense.players[line[2]-1].set_position(line)
+      active_players.append(offense.players[line[2]-1])
 
   with open('state2.txt','w') as stwo:
     stwo.write("DECLARE DEFENSE\n\n")
-    with open(gs.get_defense_roster()) as rtwo:
+    for pl in active_players:
+      stwo.write(pl.get_stat_csv()+"\n")
+    stwo.write("\n")
+    with open(defense.roster) as rtwo:
       for line in rtwo:
         stwo.write(line)
-    stwo.write("\n")
-    stwo.write(gs.get_down()+",DOWN\n")
-    stwo.write(gs.get_to_go()+",TOGO\n")
-    stwo.write(gs.get_to_td()+",TOTD\n")
-    stwo.write(gs.get_ticks_left()+",TICK\n")
-    stwo.write(gs.get_half()+",HALF\n")
+    footer(stwo, gs, offense, defense)
 
-  subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', ai_2],shell=False)
+  subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', defense.ai],shell=False)
 
-  with open('result.txt') as res:
+  with open('result2.txt') as res:
     for line in res:
       line.split(',')
+      defense.players[line[2]-1].set_position(line)
+      active_players.append(defense.players[line[2]-1])
+
+  while gs.field.ball_in_play:
+    with open('state3.txt','w') as sth:
+      sth.write("MOVE DEFENSE\n\n")
+      for i in range(11):
+        sth.write(active_players[i].get_stat_with_pos_csv()+"\n")
+      sth.write("\n")
+      for j in range(11,22):
+        sth.write(active_players[j].get_pos_csv()+"\n")
+      sth.write("\n")
+
+    gs.field.ball.get_status()
+
 
 
   gs.update('')

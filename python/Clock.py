@@ -8,7 +8,8 @@ class Clock(object):
 	
 	def update(self):
 		# Tick
-		self.time -= self.tick
+    if self.time < 0:
+		  self.time -= self.tick
 
   def set(self, time):
     self.time = time

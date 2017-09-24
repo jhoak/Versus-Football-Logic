@@ -1,3 +1,5 @@
+from Player import Player
+
 class Ball:
   # Position
   x=y=z=0
@@ -13,12 +15,26 @@ class Ball:
 
   def setvector(self, x, y, z):
     self.held = False
-    self.x_speed = 0
-    self.y_speed = 0
-    self.z_speed = 0
+    self.x_speed = x
+    self.y_speed = y
+    self.z_speed = z
 
   def update(self):
     if held:
       # TODO
       pass
     x += x_speed
+
+  def player_hold(self, player)
+    self.held = player
+    self.x = player.x
+    self.y = player.y
+    self.z = 1.5
+
+  def get_status(self):
+    if self.held:
+      return self.held.side + str(self.held.number)
+    else:
+      t_p = (self.x, self.y, self.z)
+      t_v = (self.y_speed, self.y_speed, self.y_speed)
+      return str(t_p) + "," + str(t_v)
