@@ -26,6 +26,15 @@ function save_results()
     if(value[1] == "MOVE") then
       io.write("MOVE,", key, ",", value[2], "\n")
     end
+
+    if(value[1] == "PASS") then
+      io.write("PASS,", key, ",", value[2],",", value[3], "\n")
+    end
+
+    if(value[1] == "PUNT") then
+      io.write("PUNT,", key, "\n")
+    end
+
   end
   -- Save memory string.
   file = io.open(arg[2] .. "/memory", "w")
