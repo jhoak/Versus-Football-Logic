@@ -16,6 +16,12 @@ class Ball:
   def __init__(self):
     pass
 
+
+  def set_pos(self, x, y, z):
+    self.x = x
+    self.y = y
+    self.z = z
+
   def setvector(self, x, y, z):
     self.x_speed = x
     self.y_speed = y
@@ -23,7 +29,7 @@ class Ball:
 
   def throw(self, x, y):
     self.held = False
-    dist = Math.sqrt(math.pow(x-self.x, 2)+math.pow(y-self.y, 2))
+    dist = math.sqrt(math.pow(x-self.x, 2)+math.pow(y-self.y, 2))
     vel = math.sqrt(dist/self.gravity) * self.gravity
     self.z_speed = (math.sqrt(2)*vel)/2
     self.x_speed = ((math.sqrt(2)*vel)/2) * math.atan(math.abs(y-self.y)/math.abs(x-self.x))
@@ -50,6 +56,6 @@ class Ball:
     if self.held:
       return self.held.side + str(self.held.number)
     else:
-      t_p = (self.x, self.y, self.z)
-      t_v = (self.y_speed, self.y_speed, self.y_speed)
+      t_p = str(self.x) + "," + str(self.y) + "," + str(self.z)
+      t_v = str(self.y_speed) + "," + str(self.y_speed) + "," + str(self.y_speed)
       return str(t_p) + "," + str(t_v)

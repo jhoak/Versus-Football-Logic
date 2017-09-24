@@ -23,7 +23,6 @@ class GameState:
 
   def update(self):
     # ----------- Pre-Snap ---------------
-    active_players = []
 
     offense = self.get_offense()
     defense = self.get_defense()
@@ -49,7 +48,7 @@ class GameState:
 
     with open('state2.txt','w') as stwo:
       stwo.write("DECLARE DEFENSE\n\n")
-      for pl in active_players:
+      for pl in o_players:
         stwo.write(pl.get_stat_csv()+"\n")
       stwo.write("\n")
       with open(defense.roster) as rtwo:
@@ -68,6 +67,7 @@ class GameState:
         d_players.append(defense.players[int(line[2])-1])
 
     self.ball_in_play = True
+    self.field.ball.set_position
     # ------------- During Play --------------
     # Offense State
     p = 99
@@ -114,6 +114,9 @@ class GameState:
       # Tick the Clock
       self.clock.update()
       self.ticks_left-=1
+
+    # ----------- End of play -------------------
+
     # Mom~, is it over yet?
     if self.clock.time <= 0:
       if self.half == 1:
@@ -140,11 +143,13 @@ class GameState:
       self.fieldgoal()
     '''
 
-  def action(self, act, offense, defense):
-    f_dir = self.get_direction()
-
+  def action(self, act, side, offense, defense):
+    f_dir = self.get_direction(side)
     if act[0] == "MOVE":
-      defense.players[int(act[1])-1].move(act[2][0], f_dir)
+      if side == 'def':
+        defense.players[int(act[1])-1].move(act[2][0], f_dir, offense.players)
+      elif side == 'off':
+        offense.players[int(act[1])-1].move(act[2][0], f_dir, defense.players)
     elif act[0] == "THROW":
       held = self.field.ball.held
       if self.field.ball.held:
@@ -152,9 +157,9 @@ class GameState:
         self.field.ball.throw(act[1], act[2])
 
 
-  def get_direction(self):
+  def get_direction(self, side):
     #TODO: Conditions
-    if True:
+    if side == 'off':
       return 1
     else:
       return -1
@@ -187,7 +192,7 @@ class GameState:
 
 #-------------------------------------------------------
 
-home = Team("Patrick", "home", '..team/patrick/roster.txt', '../team/patrick')
+home = Team("Patrick", "home", '../team/patrick/roster.txt', '../team/patrick')
 away = Team("xXx_TeAm_NaMe_xXx", "away", '../team/dumb/roster.txt', '../team/dumb')
 
 gs = GameState(home, away, 300.0, 0.1)
