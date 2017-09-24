@@ -44,6 +44,37 @@ local function game_state()
   return game
 end
 
+local function read_opposing_players()
+  local players = {}
+  local player = io.read("*line")
+
+  while (player ~= "") do
+    local stats = split(player, ",")
+    local player_table = {}
+    player_table["name"] = stats[1]
+    player_table["number"] = tonumber(stats[2])
+    player_table["x"] = tonumber(stats[3])
+    player_table["y"] = tonumber(stats[4])
+    player = io.read("*line")
+    table.insert(players,player_table)
+  end
+  return players
+end
+
+local function read_ball()
+  local ball = split(io.read("*line")," ")
+  io.read("*line")
+  if #ball == 2 then
+    return tonumber(ball[2])
+  else
+    local vector = {}
+    vector["x"] = tonumber(ball[2])
+    vector["y"] = tonumber(ball[3])
+    vector["z"] = tonumber(ball[4])
+    return vector
+  end
+end
+
 function readstate.readstate(infile)
   io.input(infile)
   local state_type = io.read("*line")
@@ -75,40 +106,6 @@ function readstate.readstate(infile)
 
   output["game"] = game_state()
   return output
-end
-
-
-
-
-local function read_opposing_players()
-  local players = {}
-  local player = io.read("*line")
-
-  while (player ~= "") do
-    local stats = split(player, ",")
-    local player_table = {}
-    player_table["name"] = stats[1]
-    player_table["number"] = tonumber(stats[2])
-    player_table["x"] = tonumber(stats[3])
-    player_table["y"] = tonumber(stats[4])
-    player = io.read("*line")
-    table.insert(players,player_table)
-  end
-  return players
-end
-
-local function read_ball()
-  local ball = split(io.read("*line")," ")
-  io.read("*line")
-  if #ball == 2 then
-    return tonumber(ball[2])
-  else
-    local vector = {}
-    vector["x"] = tonumber(ball[2])
-    vector["y"] = tonumber(ball[3])
-    vector["z"] = tonumber(ball[4])
-    return vector
-  end
 end
 
 return readstate

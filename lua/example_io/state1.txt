@@ -20,9 +20,8 @@ Domisquith Bartolimeo,30,100,100,100,100,100,100
 Domisquith Bartolimeo,31,100,100,100,100,100,100
 Domisquith Bartolimeo,32,100,100,100,100,100,100
 
-
 1,DOWN
 10,TOGO
 80,TOTD
-3000.0,TICK
+3000,TICK
 1,HALF

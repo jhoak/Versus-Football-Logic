@@ -1,5 +1,17 @@
 DECLARE DEFENSE
 
+Domisquith Bartolimeo,1,-500,50
+Domisquith Bartolimeo,2,-1500,50
+Domisquith Bartolimeo,3,-2500,50
+Domisquith Bartolimeo,4,-3500,50
+Domisquith Bartolimeo,5,-4500,50
+Domisquith Bartolimeo,6,-5500,50
+Domisquith Bartolimeo,7,-6500,50
+Domisquith Bartolimeo,8,-7500,50
+Domisquith Bartolimeo,9,-8500,50
+Domisquith Bartolimeo,10,-9500,50
+Domisquith Bartolimeo,11,-10500,50
+
 Domisquith Bartolimeo,1,100,100,100,100,100,100
 Domisquith Bartolimeo,2,100,100,100,100,100,100
 Domisquith Bartolimeo,3,100,100,100,100,100,100
@@ -33,9 +45,8 @@ Domisquith Bartolimeo,30,100,100,100,100,100,100
 Domisquith Bartolimeo,31,100,100,100,100,100,100
 Domisquith Bartolimeo,32,100,100,100,100,100,100
 
-
 1,DOWN
 10,TOGO
 80,TOTD
-3000.0,TICK
+3000,TICK
 1,HALF
