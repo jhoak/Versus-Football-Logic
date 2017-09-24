@@ -29,8 +29,6 @@ class Player:
     mag = self.speed*mod
     dmag = mag *(math.sqrt(2)/2)
     opposite_team_coords = []
-    if mod == 1:
-      print(dirc)
     for pl in opposite_team:
       opposite_team_coords.append((pl.x, pl.y))
     if dirc == 'N':
@@ -98,7 +96,6 @@ class Player:
 
     elif pos == 'QB':
       self.can_catch = True
-      print(int(pos_data[3]))
       self.x = int(pos_data[3])
       self.y = 0
 
