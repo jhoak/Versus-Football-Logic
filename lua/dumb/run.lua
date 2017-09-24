@@ -51,6 +51,7 @@ end
 
 if game_state["status"] == "MOVE DEFENSE" or game_state["status"] == "MOVE OFFENSE" then
   for key,value in pairs(game_state["players"]) do
+    -- Move Forward
     commands[value["number"]] = {"MOVE","F"} 
   end
 end
