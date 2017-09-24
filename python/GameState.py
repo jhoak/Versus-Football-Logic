@@ -187,8 +187,8 @@ class GameState:
 
 #-------------------------------------------------------
 
-home = Team("Patrick", "home", 'example_io/roster1.txt', '../team/patrick')
-away = Team("xXx_TeAm_NaMe_xXx", "away", 'example_io/roster1.txt', '../team/dumb')
+home = Team("Patrick", "home", '..team/patrick/roster.txt', '../team/patrick')
+away = Team("xXx_TeAm_NaMe_xXx", "away", '../team/dumb/roster.txt', '../team/dumb')
 
 gs = GameState(home, away, 300.0, 0.1)
 

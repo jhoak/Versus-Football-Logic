@@ -1,0 +1,1340 @@
+1) 174.3 10.9  32  ATL-5   Ryan, Matt
+  2) 159.9 10.0  33  GB -8   Rodgers, Aaron
+  3) 155.5  9.7  38  NO -5   Brees, Drew
+  4) 147.2  9.2  29  WAS-5   Cousins, Kirk
+  5) 134.1  8.9  27  IND-11  Luck, Andrew
+  6) 132.6  8.3  24  DAL-6   Prescott, Dak
+  7) 129.8  8.1  29  DET-7   Stafford, Matthew
+  8) 124.4  7.8  28  SEA-6   Wilson, Russell
+  9) 122.8  7.7  29  CIN-6   Dalton, Andy
+ 10) 122.8 10.2  40  NE -9   Brady, Tom
+ 11) 114.3  7.6  28  BUF-6   Taylor, Tyrod
+ 12) 110.8  7.4  26  RAI-10  Carr, Derek
+ 13) 110.6  7.4  23  TEN-8   Mariota, Marcus
+ 14) 109.2  7.3  29  MIN-9   Bradford, Sam
+ 15) 107.5  7.7  35  PIT-9   Roethlisberger, Ben
+ 16) 107.2  6.7  35  CHR-9   Rivers, Philip
+ 17) 102.8  6.9  37  ARI-8   Palmer, Carson
+ 18) 101.3  6.3  32  BAL-10  Flacco, Joe
+ 19)  99.9  6.2  23  TB -11  Winston, Jameis
+ 20)  99.4  6.6  33  KC -10  Smith, Alex
+ 21)  98.8  6.2  25  JAC-8   Bortles, Blake
+ 22)  92.1  6.1  28  CAR-11  Newton, Cam
+ 23)  90.0  5.6  36  NYG-8   Manning, Eli
+ 24)  86.3  6.6  29  MIA-11  Tannehill, Ryan
+ 25)  84.2  5.3  24  PHI-10  Wentz, Carson
+ 26)  82.4  6.9  29  SF -11  Kaepernick, Colin
+ 27)  80.2  5.7  25  DEN-5   Siemian, Trevor
+ 28)  58.2  3.9  26  CLE-9   Osweiler, Brock
+ 29)  51.5  3.7  34  TB -11  Fitzpatrick, Ryan
+ 30)  46.6  4.7  29  MIN-9   Keenum, Case
+ 31)  39.9  6.7  31  SF -11  Hoyer, Brian
+ 32)  35.9  4.0  24  CLE-9   Kessler, Cody
+ 33)  27.0  3.9  26  SF -11  Barkley, Matt
+ 34)  23.8  4.0  27  ARI-8   Gabbert, Blaine
+ 35)  23.1  5.8  33  MIA-11  Moore, Matt
+ 36)  15.8  3.2  38  NYJ-11  McCown, Josh
+ 37)  15.3  2.6  25  NE -9   Garoppolo, Jimmy
+ 38)  13.3  4.4  23  NE -9   Brissett, Jacoby
+ 39)  12.7  1.6  28  PIT-9   Jones, Landry
+ 40)  12.5  4.2  28  PHI-10  Foles, Nick
+ 41)  12.0  1.7  22  RAM-8   Goff, Jared
+ 42)  10.7  3.6  23  DEN-5   Lynch, Paxton
+ 43)   9.5  1.6  26  NYJ-11  Petty, Bryce
+ 44)   8.6  2.9  27  HOU-7   Savage, Tom
+ 45)   7.4  1.5  34  CAR-11  Anderson, Derek
+ 46)   4.3  1.1  35  TEN-8   Cassel, Matt
+ 47)   3.6  1.8  27  CHI-9   Glennon, Mike
+ 48)   3.4  1.7  26  NYG-8   Smith, Geno
+ 49)   2.8  0.6  24  SEA-6   Boykin, Trevone
+ 50)   2.3  0.8  30  IND-11  Tolzien, Scott
+ 51)   2.1  2.1  24  RAI-10  Cook, Connor
+ 52)   1.0  1.0  24  BUF-6   Jones, Cardale
+ 53)   0.6  0.6  30  NO -5   Daniel, Chase
+ 54)   0.2  0.0  27  RAI-10  Manuel, EJ
+ 55)             22  CHI-9   Trubisky, Mitchell
+ 56)             26  CIN-6   McCarron, AJ
+ 57)             22  CLE-9   Kizer, DeShone
+ 58)             28  DAL-6   Moore, Kellen
+ 59)             22  KC -10  Mahomes, Patrick
+ 60)             24  MIN-9   Bridgewater, Teddy
+ 61)             31  NYG-8   Johnson, Josh
+ 62)             22  NYG-8   Webb, Davis
+ 63)             24  NYJ-11  Hackenberg, Christian
+ 64)             22  PIT-9   Dobbs, Joshua
+ 65)             22  SF -11  Beathard, C.J.
+ 66)             31  WAS-5   McCoy, Colt
+ 67)             22  HOU-7   Watson, Deshaun
+ 68)             24  DET-7   Rudock, Jake
+ 69)             30  BUF-6   Yates, T.J.
+ 70)  -0.3 -0.3  32  JAC-8   Henne, Chad
+ 71)  -0.3 -0.1  36  ATL-5   Schaub, Matt
+ 72)  -0.6 -0.1  34  CHR-9   Clemens, Kellen
+ 73)  -0.7 -0.2  27  PHI-10  McGloin, Matt
+ 74)  -1.5 -1.5  25  RAM-8   Mannion, Sean
+ 75)  -1.7 -0.9  30  CHI-9   Sanchez, Mark
+ 76)  -2.2 -0.5  29  BAL-10  Mallett, Ryan
+ 77)  -2.3 -0.5  33  ARI-8   Stanton, Drew
+ 78)  -3.1 -0.8  24  GB -8   Hundley, Brett
+ 
+ 
+Running Backs
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+ 79) 113.6  7.1  25  ARI-8   Johnson, David
+ 80) 109.3  7.3  22  DAL-6   Elliott, Ezekiel
+ 81)  96.9  6.5  29  BUF-6   McCoy, LeSean
+ 82)  94.5  7.9  25  PIT-9   Bell, Le'Veon
+ 83)  85.1  5.3  25  ATL-5   Freeman, Devonta
+ 84)  84.9  5.3  29  TEN-8   Murray, DeMarco
+ 85)  78.9  5.3  22  CHI-9   Howard, Jordan
+ 86)  71.8  4.5  27  NO -5   Ingram, Mark
+ 87)  71.3  4.8  24  MIA-11  Ajayi, Jay
+ 88)  69.1  5.3  24  CHR-9   Gordon, Melvin
+ 89)  68.6  4.3  30  PHI-10  Blount, LeGarrette
+ 90)  63.0  3.9  24  CLE-9   Crowell, Isaiah
+ 91)  59.3  4.2  27  MIN-9   Murray, Latavius
+ 92)  58.0  3.6  28  NYJ-11  Powell, Bilal
+ 93)  56.7  3.5  34  IND-11  Gore, Frank
+ 94)  56.3  4.0  25  KC -10  Ware, Spencer
+ 95)  55.6  4.3  24  ATL-5   Coleman, Tevin
+ 96)  55.2  4.2  25  SF -11  Hyde, Carlos
+ 97)  53.8  3.8  26  HOU-7   Miller, Lamar
+ 98)  50.2  3.3  24  CIN-6   Hill, Jeremy
+ 99)  49.5  3.5  31  NYJ-11  Forte, Matt
+100)  47.8  3.0  26  BAL-10  West, Terrance
+101)  46.6  2.9  23  RAM-8   Gurley, Todd
+102)  44.3  3.0  34  PHI-10  Sproles, Darren
+103)  43.1  2.9  26  NE -9   Gillislee, Mike
+104)  42.5  2.8  24  GB -8   Montgomery, Ty
+105)  40.9  3.1  30  CAR-11  Stewart, Jonathan
+106)  40.1  2.7  24  WAS-5   Kelley, Rob
+107)  40.0  2.5  23  CLE-9   Johnson, Duke
+108)  39.3  2.5  26  WAS-5   Thompson, Chris
+109)  38.8  2.4  25  NE -9   White, James
+110)  38.1  3.8  26  DET-7   Riddick, Theo
+111)  36.6  2.3  31  SF -11  Hightower, Tim
+112)  36.3  2.3  23  RAI-10  Richard, Jalen
+113)  34.0  2.3  25  MIN-9   McKinnon, Jerick
+114)  33.9  2.1  25  DEN-5   Booker, Devontae
+115)  33.3  2.2  23  TEN-8   Henry, Derrick
+116)  31.8  2.1  23  JAC-8   Yeldon, T.J.
+117)  30.3  3.0  25  CIN-6   Bernard, Giovani
+118)  28.8  4.1  26  DEN-5   Anderson, C.J.
+119)  28.6  2.9  27  TB -11  Rodgers, Jacquizz
+120)  27.9  2.0  24  RAI-10  Washington, DeAndre
+121)  27.5  2.3  23  BAL-10  Dixon, Kenneth
+122)  27.4  1.8  27  IND-11  Turbin, Robert
+123)  25.3  1.8  25  DET-7   Zenner, Zach
+124)  23.4  2.1  29  JAC-8   Ivory, Chris
+125)  23.1  1.7  22  NYG-8   Perkins, Paul
+126)  21.8  1.5  25  MIA-11  Williams, Damien
+127)  21.4  1.4  26  KC -10  West, Charcandrick
+128)  19.3  3.2  23  SEA-6   Prosise, C.J.
+129)  18.5  2.1  24  SEA-6   Rawls, Thomas
+130)  18.4  2.3  28  TB -11  Martin, Doug
+131)  17.5  1.2  26  HOU-7   Blue, Alfred
+132)  16.3  1.4  25  CHI-9   Langford, Jeremy
+133)  16.1  3.2  27  SEA-6   Lacy, Eddie
+134)  15.7  2.2  26  NE -9   Lewis, Dion
+135)  14.0  2.0  26  TB -11  Sims, Charles
+136)  12.6  0.8  24  GB -8   Ripkowski, Aaron
+137)  12.1  1.2  26  ARI-8   Williams, Kerwynn
+138)  10.9  0.8  28  DAL-6   Morris, Alfred
+139)   9.7  1.9  28  NYG-8   Vereen, Shane
+140)   9.2  0.8  27  CHI-9   Cunningham, Benny
+141)   9.1  0.7  27  RAM-8   Dunbar, Lance
+142)   8.3  4.1  32  BAL-10  Woodhead, Danny
+143)   8.2  4.1  24  DET-7   Abdullah, Ameer
+144)   7.0  0.5  24  CHR-9   Farrow, Kenneth
+145)   6.2  0.4  28  ARI-8   Ellington, Andre
+146)   3.6  0.2  27  PIT-9   Toussaint, Fitzgerald
+147)   3.5  1.2  30  DEN-5   Charles, Jamaal
+148)   3.5  1.2  30  DAL-6   McFadden, Darren
+149)   3.1  0.2  24  CLE-9   Atkinson, George
+150)   2.8  0.2  27  NYJ-11  Todman, Jordan
+151)   1.1  0.1  23  BUF-6   Williams, Jonathan
+152)   0.7  0.0  24  RAM-8   Brown, Malcolm
+153)             22  CIN-6   Mixon, Joe
+154)             22  GB -8   Williams, Jamaal
+155)             22  IND-11  Mack, Marlon
+156)             22  KC -10  Hunt, Kareem
+157)             31  RAI-10  Lynch, Marshawn
+158)             22  MIN-9   Cook, Dalvin
+159)             22  NO -5   Kamara, Alvin
+160)             22  NYG-8   Gallman, Wayne
+161)             22  PHI-10  Pumphrey, Donnel
+162)             22  PIT-9   Conner, James
+163)             26  CHR-9   Oliver, Branden
+164)             22  SF -11  Williams, Joe
+165)             22  WAS-5   Perine, Samaje
+166)             22  CAR-11  McCaffrey, Christian
+167)             22  JAC-8   Fournette, Leonard
+168)             22  HOU-7   Foreman, D'Onta
+169)  -1.4 -0.5  32  NO -5   Peterson, Adrian
+ 
+ 
+Wide Receivers
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+170)  84.7  5.6  29  PIT-9   Brown, Antonio
+171)  84.4  5.3  24  TB -11  Evans, Mike
+172)  83.9  5.2  24  NYG-8   Beckham, Odell
+173)  82.3  5.1  27  IND-11  Hilton, T.Y.
+174)  82.2  5.1  32  GB -8   Nelson, Jordy
+175)  79.0  5.6  28  ATL-5   Jones, Julio
+176)  72.2  4.5  28  SEA-6   Baldwin, Doug
+177)  71.7  4.5  23  NE -9   Cooks, Brandin
+178)  69.9  4.7  23  NO -5   Thomas, Michael
+179)  68.0  4.2  23  RAI-10  Cooper, Amari
+180)  67.7  4.2  31  NE -9   Edelman, Julian
+181)  67.1  4.2  24  MIA-11  Landry, Jarvis
+182)  66.6  4.2  34  ARI-8   Fitzgerald, Larry
+183)  66.1  4.1  29  RAI-10  Crabtree, Michael
+184)  65.6  4.1  24  GB -8   Adams, Davante
+185)  63.5  4.0  29  DEN-5   Thomas, Demaryius
+186)  63.2  3.9  25  CHR-9   Williams, Tyrell
+187)  62.8  3.9  29  DET-7   Tate, Golden
+188)  62.4  3.9  28  WAS-5   Pryor, Terrelle
+189)  62.3  3.9  23  KC -10  Hill, Tyreek
+190)  62.2  3.9  30  DEN-5   Sanders, Emmanuel
+191)  60.7  3.8  31  BAL-10  Wallace, Mike
+192)  60.4  3.8  31  SF -11  Garcon, Pierre
+193)  58.3  3.6  27  TEN-8   Matthews, Rishard
+194)  58.2  3.6  27  MIN-9   Thielen, Adam
+195)  57.8  3.6  25  HOU-7   Hopkins, DeAndre
+196)  57.2  3.8  28  CLE-9   Britt, Kenny
+197)  57.2  3.8  24  NO -5   Snead, Willie
+198)  56.2  4.3  23  MIN-9   Diggs, Stefon
+199)  56.1  3.5  24  JAC-8   Robinson, Allen
+200)  55.8  5.6  29  CIN-6   Green, A.J.
+201)  55.7  3.5  26  CAR-11  Benjamin, Kelvin
+202)  55.4  3.7  30  TB -11  Jackson, DeSean
+203)  53.4  3.3  28  DAL-6   Beasley, Cole
+204)  53.0  3.3  30  CIN-6   LaFell, Brandon
+205)  53.0  3.3  25  JAC-8   Lee, Marqise
+206)  52.3  3.3  24  WAS-5   Crowder, Jamison
+207)  52.3  3.5  27  DET-7   Jones, Marvin
+208)  51.0  3.6  24  CHI-9   Meredith, Cameron
+209)  50.6  3.2  25  NYJ-11  Enunwa, Quincy
+210)  50.0  3.1  24  NYG-8   Shepard, Sterling
+211)  49.8  3.6  25  PHI-10  Matthews, Jordan
+212)  49.7  3.8  28  DAL-6   Bryant, Dez
+213)  49.6  3.1  32  NO -5   Ginn, Ted
+214)  48.0  3.0  28  CHR-9   Inman, Dontrelle
+215)  46.4  2.9  25  MIA-11  Stills, Kenny
+216)  46.3  3.1  33  NYG-8   Marshall, Brandon
+217)  45.2  3.8  27  PHI-10  Jeffery, Alshon
+218)  45.0  3.0  24  MIA-11  Parker, DeVante
+219)  42.5  2.7  28  SF -11  Kerley, Jeremy
+220)  42.1  2.8  26  RAM-8   Austin, Tavon
+221)  41.9  2.8  24  SEA-6   Lockett, Tyler
+222)  41.2  3.2  27  GB -8   Cobb, Randall
+223)  41.0  2.7  25  ARI-8   Nelson, J.J.
+224)  40.9  3.1  26  ATL-5   Gabriel, Taylor
+225)  40.8  2.7  27  ATL-5   Sanu, Mohamed
+226)  38.6  2.6  24  TB -11  Humphries, Adam
+227)  37.9  2.4  22  CIN-6   Boyd, Tyler
+228)  37.5  2.5  28  NE -9   Hogan, Chris
+229)  36.7  2.6  27  CHR-9   Benjamin, Travis
+230)  36.6  2.8  24  PIT-9   Rogers, Eli
+231)  36.4  2.6  23  HOU-7   Fuller, Will
+232)  36.0  2.8  25  RAM-8   Woods, Robert
+233)  35.1  2.2  27  DAL-6   Williams, Terrance
+234)  34.9  2.2  24  NYJ-11  Anderson, Robby
+235)  33.8  2.1  28  WAS-5   Quick, Brian
+236)  32.5  2.0  26  RAI-10  Patterson, Cordarrelle
+237)  31.8  2.6  29  BAL-10  Maclin, Jeremy
+238)  31.0  2.1  27  ARI-8   Brown, John
+239)  31.0  1.9  22  TEN-8   Sharpe, Tajae
+240)  30.7  2.0  30  CHI-9   Cruz, Victor
+241)  30.1  2.0  24  IND-11  Dorsett, Phillip
+242)  30.0  1.9  24  KC -10  Conley, Chris
+243)  29.6  1.9  27  SEA-6   Kearse, Jermaine
+244)  29.6  1.8  23  BAL-10  Perriman, Breshad
+245)  29.1  2.6  25  JAC-8   Hurns, Allen
+246)  28.9  1.8  26  RAI-10  Roberts, Seth
+247)  26.5  2.7  23  CLE-9   Coleman, Corey
+248)  26.4  1.9  24  NE -9   Mitchell, Malcolm
+249)  26.3  2.4  27  CHI-9   Wright, Kendall
+250)  26.0  1.7  26  SF -11  Goodwin, Marquise
+251)  25.1  2.8  24  IND-11  Moncrief, Donte
+252)  24.8  3.1  24  RAM-8   Watkins, Sammy
+253)  24.3  1.5  25  KC -10  Wilson, Albert
+254)  24.2  1.6  24  PHI-10  Agholor, Nelson
+255)  23.6  1.6  23  CAR-11  Funchess, Devin
+256)  20.7  1.5  26  CAR-11  Shepard, Russell
+257)  19.9  1.2  28  IND-11  Aiken, Kamar
+258)  19.4  1.2  25  NO -5   Coleman, Brandon
+259)  17.7  1.5  28  PHI-10  Smith, Torrey
+260)  16.9  1.1  25  SEA-6   Richardson, Paul
+261)  16.8  1.4  31  NE -9   Amendola, Danny
+262)  16.1  1.0  25  BUF-6   Brown, Corey
+263)  12.5  1.2  23  GB -8   Allison, Geronimo
+264)  12.1  0.8  25  DEN-5   Taylor, Jordan
+265)  11.8  0.7  23  CLE-9   Louis, Ricardo
+266)  11.8  2.9  25  CHI-9   White, Kevin
+267)  11.6  3.9  30  TEN-8   Decker, Eric
+268)  11.2  0.7  24  NYJ-11  Peake, Charone
+269)  10.8  0.7  29  BUF-6   Holmes, Andre
+270)  10.7  1.5  27  ARI-8   Brown, Jaron
+271)  10.0  0.8  26  DEN-5   Fowler, Bennie
+272)   8.0  1.0  23  HOU-7   Strong, Jaelen
+273)   7.5  0.8  24  HOU-7   Miller, Braxton
+274)   7.3  0.6  23  NYG-8   Lewis, Roger
+275)   5.9  0.7  27  MIN-9   Wright, Jarius
+276)   4.7  1.6  25  DET-7   Jones, TJ
+277)   4.6  1.5  26  BAL-10  Campanaro, Michael
+278)   4.3  0.3  22  CLE-9   Higgins, Rashard
+279)   4.2  0.4  24  WAS-5   Harris, Maurice
+280)   4.0  1.3  26  CHI-9   Wheaton, Markus
+281)   3.7  3.7  25  CHR-9   Allen, Keenan
+282)   2.8  0.2  23  MIA-11  Carroo, Leonte
+283)   1.1  0.6  25  SF -11  Smelter, DeAndre
+284)   1.0  0.2  24  JAC-8   Wynn, Shane
+285)   0.8  0.1  22  MIN-9   Treadwell, Laquon
+286)             22  BUF-6   Jones, Zay
+287)             22  CIN-6   Ross, John
+288)             26  CLE-9   Gordon, Josh
+289)             22  DAL-6   Switzer, Ryan
+290)             22  DEN-5   Henderson, Carlos
+291)             22  DET-7   Golladay, Kenny
+292)             22  TEN-8   Davis, Corey
+293)             22  TEN-8   Taylor, Taywan
+294)             22  RAM-8   Kupp, Cooper
+295)             22  NYJ-11  Stewart, ArDarius
+296)             22  NYJ-11  Hansen, Chad
+297)             22  ARI-8   Williams, Chad
+298)             25  PIT-9   Bryant, Martavis
+299)             22  PIT-9   Smith-Schuster, JuJu
+300)             22  CHR-9   Williams, Mike
+301)             26  SF -11  Ellington, Bruce
+302)             22  SEA-6   Darboh, Amara
+303)             22  TB -11  Godwin, Chris
+304)             22  CAR-11  Samuel, Curtis
+305)             22  JAC-8   Westbrook, Dede
+ 
+(Reminder:  Individual players do not score 
+Scoresheet points for what they do on special 
+teams in the NFL!)
+ 
+ 
+Tight Ends
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+306)  65.7  4.1  27  KC -10  Kelce, Travis
+307)  62.1  3.9  32  CAR-11  Olsen, Greg
+308)  57.2  3.6  27  MIN-9   Rudolph, Kyle
+309)  52.8  3.3  30  SEA-6   Graham, Jimmy
+310)  52.5  3.5  33  TEN-8   Walker, Delanie
+311)  52.2  3.7  26  PHI-10  Ertz, Zach
+312)  46.4  2.9  30  GB -8   Bennett, Martellus
+313)  45.8  3.1  26  TB -11  Brate, Cameron
+314)  45.1  3.8  27  WAS-5   Reed, Jordan
+315)  43.3  3.3  24  DET-7   Ebron, Eric
+316)  42.2  2.6  35  DAL-6   Witten, Jason
+317)  40.0  2.5  28  NO -5   Fleener, Coby
+318)  38.7  2.4  27  IND-11  Doyle, Jack
+319)  38.0  2.7  37  CHR-9   Gates, Antonio
+320)  37.5  2.5  28  BUF-6   Clay, Charles
+321)  37.2  2.5  25  HOU-7   Fiedorowicz, C.J.
+322)  34.1  2.1  33  WAS-5   Davis, Vernon
+323)  32.8  3.3  32  CHI-9   Miller, Zach
+324)  32.8  2.2  22  CHR-9   Henry, Hunter
+325)  30.5  1.9  29  GB -8   Kendricks, Lance
+326)  29.6  3.7  28  NE -9   Gronkowski, Rob
+327)  29.4  2.1  27  NE -9   Allen, Dwayne
+328)  28.2  1.8  27  HOU-7   Griffin, Ryan
+329)  26.6  3.3  26  CIN-6   Eifert, Tyler
+330)  26.4  1.7  25  NYG-8   Tye, Will
+331)  25.0  1.6  29  ARI-8   Gresham, Jermaine
+332)  24.4  2.2  27  PIT-9   McDonald, Vance
+333)  24.3  1.5  23  PIT-9   James, Jesse
+334)  24.0  1.6  25  RAI-10  Walford, Clive
+335)  21.3  1.3  29  SF -11  Celek, Garrett
+336)  21.2  2.4  29  MIA-11  Thomas, Julius
+337)  20.6  2.1  30  RAI-10  Cook, Jared
+338)  19.4  1.4  26  CHI-9   Sims, Dion
+339)  18.8  1.2  25  GB -8   Rodgers, Richard
+340)  17.6  1.3  22  ATL-5   Hooper, Austin
+341)  15.9  1.0  25  IND-11  Swoope, Erik
+342)  15.4  1.5  24  CIN-6   Uzomah, C.J.
+343)  15.2  0.9  26  ATL-5   Toilolo, Levine
+344)  14.9  1.2  29  DEN-5   Green, Virgil
+345)  12.3  0.9  26  JAC-8   Rivera, Mychal
+346)  11.8  1.2  33  JAC-8   Lewis, Marcedes
+347)  10.2  0.9  27  SEA-6   Willson, Luke
+348)  10.0  0.7  31  DET-7   Fells, Darren
+349)  10.0  1.1  27  NO -5   Hill, Josh
+350)   9.8  1.1  24  NYJ-11  Seferian-Jenkins, Austin
+351)   9.5  0.6  26  KC -10  Harris, Demetrius
+352)   9.1  0.8  24  CLE-9   Devalve, Seth
+353)   9.0  0.6  32  PHI-10  Celek, Brent
+354)   8.9  0.7  24  PIT-9   Grimble, Xavier
+355)   8.4  0.5  30  CAR-11  Dickson, Ed
+356)   8.1  0.8  25  DEN-5   Derby, A.J.
+357)   6.9  0.4  33  MIA-11  Fasano, Anthony
+358)   6.6  0.4  25  BUF-6   O'Leary, Nick
+359)   5.4  0.8  25  BAL-10  Gillmore, Crockett
+360)   4.0  0.4  23  DAL-6   Swaim, Geoff
+361)   3.3  0.2  27  TEN-8   Supernaw, Phillip
+362)   0.4  0.0  24  MIN-9   Morgan, David
+363)   0.2  0.1  24  ARI-8   Niklas, Troy
+364)             22  CHI-9   Shaheen, Adam
+365)             22  CLE-9   Njoku, David
+366)             22  RAM-8   Everett, Gerald
+367)             22  NYG-8   Engram, Evan
+368)             22  TB -11  Howard, O.J.
+369)             36  BAL-10  Watson, Benjamin
+370)             22  NYJ-11  Leggett, Jordan
+371)             23  SF -11  Kittle, George
+ 
+ 
+Defensive Linemen
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+372)  48.6  3.0  28  NYG-8   Harrison, Damon
+373)  47.3  3.0  26  NYG-8   Vernon, Olivier
+374)  46.5  2.9  31  JAC-8   Campbell, Calais
+375)  45.2  2.8  23  NYJ-11  Williams, Leonard
+376)  45.1  2.8  29  PHI-10  Graham, Brandon
+377)  44.3  3.0  23  SF -11  Buckner, DeForest
+378)  43.9  2.7  28  NO -5   Jordan, Cameron
+379)  43.7  2.7  28  MIN-9   Joseph, Linval
+380)  42.3  2.6  22  MIN-9   Hunter, Danielle
+381)  41.9  3.5  28  NYG-8   Pierre-Paul, Jason
+382)  41.9  2.6  30  MIA-11  Suh, Ndamukong
+383)  41.1  2.9  24  HOU-7   Clowney, Jadeveon
+384)  40.9  2.6  26  RAM-8   Donald, Aaron
+385)  40.8  2.5  27  CHI-9   Hicks, Akiem
+386)  40.1  2.5  29  MIN-9   Griffen, Everson
+387)  39.8  2.7  34  BUF-6   Williams, Kyle
+388)  39.5  2.6  26  NYJ-11  Richardson, Sheldon
+389)  38.4  2.6  24  SEA-6   Clark, Frank
+390)  37.5  2.3  31  SEA-6   Avril, Cliff
+391)  37.3  2.3  35  MIA-11  Wake, Cameron
+392)  37.3  2.3  28  CAR-11  Short, Kawann
+393)  36.7  2.3  28  CIN-6   Dunlap, Carlos
+394)  36.5  3.0  22  CHR-9   Bosa, Joey
+395)  35.1  2.3  27  NYJ-11  Wilkerson, Muhammad
+396)  34.1  2.1  28  MIA-11  Branch, Andre
+397)  33.8  2.4  26  TB -11  Gholston, William
+398)  32.3  2.0  28  DEN-5   Crick, Jared
+399)  32.2  2.3  27  DEN-5   Wolfe, Derek
+400)  31.8  2.0  26  PHI-10  Cox, Fletcher
+401)  31.7  2.0  29  BUF-6   Hughes, Jerry
+402)  31.3  2.0  23  CLE-9   Ogbah, Emmanuel
+403)  30.8  1.9  29  TB -11  Baker, Chris
+404)  30.7  2.2  32  MIA-11  Hayes, William
+405)  30.5  2.0  29  TB -11  McCoy, Gerald
+406)  30.1  1.9  24  NE -9   Flowers, Trey
+407)  29.6  2.1  24  PIT-9   Tuitt, Stephon
+408)  29.6  1.8  24  CLE-9   Shelton, Danny
+409)  29.5  1.8  32  NE -9   Branch, Alan
+410)  29.2  2.1  30  CAR-11  Addison, Mario
+411)  29.0  1.9  27  TEN-8   Casey, Jurrell
+412)  28.9  1.8  22  JAC-8   Ngakoue, Yannick
+413)  28.9  1.8  30  CIN-6   Johnson, Michael
+414)  28.5  1.8  26  DET-7   Hyder, Kerry
+415)  28.4  1.8  25  IND-11  Hankins, Johnathan
+416)  28.3  1.8  28  BAL-10  Williams, Brandon
+417)  27.6  1.7  27  JAC-8   Jackson, Malik
+418)  27.2  1.7  29  CIN-6   Atkins, Geno
+419)  27.0  1.7  23  NE -9   Brown, Malcom
+420)  27.0  1.7  31  SEA-6   Rubin, Ahtyba
+421)  26.9  2.4  31  SEA-6   Bennett, Michael
+422)  26.8  1.7  34  MIN-9   Robison, Brian
+423)  25.5  1.6  25  NE -9   Ealy, Kony
+424)  25.5  1.6  24  ATL-5   Jarrett, Grady
+425)  25.3  1.7  29  WAS-5   McClain, Terrell
+426)  25.0  1.6  25  RAM-8   Easley, Dominique
+427)  24.7  1.5  26  CLE-9   Meder, Jamie
+428)  23.9  1.5  28  GB -8   Daniels, Mike
+429)  23.9  1.5  32  PHI-10  Long, Chris
+430)  23.7  1.5  27  CHR-9   Liuget, Corey
+431)  23.7  3.0  27  BUF-6   Dareus, Marcell
+432)  23.2  1.4  37  CAR-11  Peppers, Julius
+433)  22.9  1.4  24  PHI-10  Jernigan, Timmy
+434)  22.0  1.6  27  DAL-6   Crawford, Tyrone
+435)  22.0  1.5  24  DAL-6   Irving, David
+436)  21.7  2.0  31  NYJ-11  McLendon, Steve
+437)  21.7  1.4  23  TB -11  Spence, Noah
+438)  21.5  1.3  27  RAI-10  Autry, Denico
+439)  21.4  1.3  26  RAM-8   Westbrooks, Ethan
+440)  20.8  1.6  27  KC -10  Logan, Bennie
+441)  20.8  1.6  31  CAR-11  Johnson, Charles
+442)  20.6  1.6  28  DET-7   Ansah, Ezekiel
+443)  20.5  1.7  33  NE -9   Ninkovich, Rob
+444)  20.2  1.3  24  BAL-10  Pierce, Michael
+445)  20.1  1.3  22  DET-7   Robinson, A'Shawn
+446)  19.8  1.3  26  ARI-8   Mauro, Josh
+447)  19.8  1.2  22  DAL-6   Collins, Maliek
+448)  19.7  1.3  25  JAC-8   Jones, Abry
+449)  19.2  1.5  29  ATL-5   Clayborn, Adrian
+450)  19.0  1.2  30  WAS-5   Hood, Ziggy
+451)  18.5  1.2  32  DEN-5   Peko, Domata
+452)  18.0  1.2  30  GB -8   Guion, Letroy
+453)  18.0  1.1  27  CAR-11  Lotulelei, Star
+454)  18.0  1.1  29  PHI-10  Curry, Vinny
+455)  17.5  1.1  23  KC -10  Jones, Chris
+456)  17.5  1.1  30  GB -8   Jean-Francois, Ricky
+457)  17.3  1.2  24  PIT-9   Hargrave, Javon
+458)  17.0  1.1  27  ATL-5   Poe, Dontari
+459)  16.7  1.0  28  TEN-8   Williams, Sylvester
+460)  16.6  1.0  24  MIA-11  Phillips, Jordan
+461)  16.4  1.0  25  TEN-8   Jones, Daquan
+462)  16.4  1.1  24  SEA-6   Reed, Jarran
+463)  16.3  1.8  23  NO -5   Rankins, Sheldon
+464)  16.2  2.3  28  PIT-9   Heyward, Cameron
+465)  15.8  1.8  27  WAS-5   McGee, Stacy
+466)  15.7  1.6  32  CHR-9   Mebane, Brandon
+467)  14.9  0.9  23  HOU-7   Covington, Christian
+468)  14.8  0.9  23  RAI-10  Ward, Jihad
+469)  13.7  0.9  27  MIN-9   Jones, Datone
+470)  13.1  0.9  33  MIN-9   Johnson, Tom
+471)  13.0  0.9  24  CLE-9   Nassib, Carl
+472)  13.0  0.8  21  GB -8   Clark, Kenny
+473)  12.8  1.6  33  SF -11  Dumervil, Elvis
+474)  12.7  1.0  30  CHI-9   Unrein, Mitch
+475)  12.4  0.8  29  ARI-8   Peters, Corey
+476)  12.2  1.5  23  SF -11  Armstead, Arik
+477)  11.7  0.9  33  DET-7   Ngata, Haloti
+478)  11.5  1.9  23  CHI-9   Goldman, Eddie
+479)  11.5  0.7  23  HOU-7   Reader, D.J.
+480)  11.3  0.7  26  RAI-10  Ellis, Justin
+481)  11.2  0.7  22  IND-11  Ridgeway, Hassan
+482)  10.7  0.8  26  RAM-8   Brockers, Michael
+483)  10.3  1.0  23  BUF-6   Lawson, Shaq
+484)  10.2  1.1  29  SF -11  Mitchell, Earl
+485)  10.1  0.7  24  NO -5   Davison, Tyeler
+486)  10.0  1.1  25  DAL-6   Lawrence, Demarcus
+487)   9.6  0.7  25  CLE-9   Cooper, Xavier
+488)   8.9  0.6  25  ARI-8   Gunter, Rodney
+489)   8.3  0.6  22  RAI-10  Latham, Darius
+490)   7.6  0.5  26  BAL-10  Urban, Brent
+491)   7.6  0.5  30  IND-11  Hunt, Margus
+492)   7.3  0.7  23  TEN-8   Johnson, Austin
+493)   7.2  1.4  27  DET-7   Bryant, Armonty
+494)   7.1  0.6  26  IND-11  Anderson, Henry
+495)   6.7  1.0  31  IND-11  Langford, Kendall
+496)   5.7  0.6  28  CHI-9   Jenkins, John
+497)   5.2  1.7  28  HOU-7   Watt, J.J.
+498)   4.1  0.8  28  KC -10  Bailey, Allen
+499)   0.3  0.1  22  ARI-8   Nkemdiche, Robert
+500)             22  ATL-5   McKinley, Takkarist
+501)             22  CLE-9   Garrett, Myles
+502)             22  DAL-6   Charlton, Taco
+503)             22  DEN-5   Walker, DeMarcus
+504)             22  GB -8   Adams, Montravius
+505)             22  KC -10  Kpassagnon, Tanoh
+506)             22  RAI-10  Vanderdoes, Eddie
+507)             22  NYG-8   Tomlinson, Dalvin
+508)             22  PHI-10  Barnett, Derek
+509)             22  SF -11  Thomas, Solomon
+510)             22  SEA-6   McDowell, Malik
+511)             22  WAS-5   Allen, Jonathan
+512)             22  CAR-11  Hall, Daeshon
+513)             22  JAC-8   Smoot, Dawuane
+514)             24  BAL-10  Kaufusi, Bronson
+515)             22  BAL-10  Wormley, Chris
+516)             22  MIA-11  Harris, Charles
+517)             24  NO -5   Kikaha, Hau'oli
+518)             24  BAL-10  Davis, Carl
+519)             23  CIN-6   Billings, Andrew
+ 
+ 
+Linebackers
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+520)  69.3  4.3  23  TB -11  Alexander, Kwon
+521)  65.4  4.1  27  WAS-5   Brown, Zach
+522)  64.5  4.0  27  SEA-6   Wagner, Bobby
+523)  60.9  3.8  25  RAM-8   Ogletree, Alec
+524)  58.7  3.9  22  ATL-5   Jones, Deion
+525)  58.4  3.7  25  CLE-9   Kirksey, Christian
+526)  57.9  3.9  31  DAL-6   Lee, Sean
+527)  57.8  3.6  26  JAC-8   Smith, Telvin
+528)  57.1  3.6  32  JAC-8   Posluszny, Paul
+529)  56.0  3.7  27  MIA-11  Alonso, Kiko
+530)  55.8  3.5  26  RAI-10  Mack, Khalil
+531)  55.4  3.5  27  TB -11  David, Lavonte
+532)  55.1  3.7  27  CLE-9   Collins, Jamie
+533)  54.9  3.4  34  CAR-11  Davis, Thomas
+534)  54.7  3.4  31  MIA-11  Timmons, Lawrence
+535)  54.1  3.4  28  SEA-6   Wright, K.J.
+536)  53.8  3.4  27  RAM-8   Barron, Mark
+537)  53.8  3.6  25  MIN-9   Kendricks, Eric
+538)  53.7  3.4  24  BUF-6   Brown, Preston
+539)  53.3  3.3  24  HOU-7   McKinney, Benardrick
+540)  50.6  3.4  27  DET-7   Whitehead, Tahir
+541)  50.3  3.1  28  DEN-5   Miller, Von
+542)  49.5  4.5  26  CIN-6   Burfict, Vontaze
+543)  49.2  3.1  28  WAS-5   Foster, Mason
+544)  49.0  3.1  28  PHI-10  Bradham, Nigel
+545)  47.7  3.7  25  PIT-9   Shazier, Ryan
+546)  47.6  3.2  29  NO -5   Robertson, Craig
+547)  47.0  2.9  34  BUF-6   Alexander, Lorenzo
+548)  46.3  2.9  35  ARI-8   Dansby, Karlos
+549)  46.1  4.6  26  CAR-11  Kuechly, Luke
+550)  45.0  3.2  25  BAL-10  Mosley, C.J.
+551)  44.7  2.8  25  TEN-8   Williamson, Avery
+552)  44.4  2.8  25  PHI-10  Hicks, Jordan
+553)  44.1  3.7  31  CHI-9   Freeman, Jerrell
+554)  43.9  2.9  28  SF -11  Smith, Malcolm
+555)  43.5  3.3  34  KC -10  Johnson, Derrick
+556)  43.3  2.7  26  ARI-8   Golden, Markus
+557)  43.3  2.7  25  ATL-5   Beasley, Vic
+558)  41.6  2.6  29  RAI-10  Irvin, Bruce
+559)  41.6  2.8  27  WAS-5   Compton, Will
+560)  40.5  2.5  28  NYJ-11  Davis, Demario
+561)  40.3  2.5  28  CHR-9   Ingram, Melvin
+562)  40.1  2.5  27  ARI-8   Jones, Chandler
+563)  39.9  2.7  26  BUF-6   Hodges, Gerald
+564)  38.7  2.4  25  DEN-5   Davis, Todd
+565)  38.1  3.2  23  CHR-9   Brown, Jatavis
+566)  37.7  2.4  30  NYG-8   Casillas, Jonathan
+567)  37.1  2.5  33  NE -9   Harris, David
+568)  36.8  3.3  25  KC -10  Wilson, Ramik
+569)  36.4  2.8  25  ARI-8   Bucannon, Deone
+570)  35.8  2.2  26  CIN-6   Minter, Kevin
+571)  35.5  2.4  27  HOU-7   Mercilus, Whitney
+572)  35.5  2.7  28  CHR-9   Toomer, Korey
+573)  35.0  2.5  28  DET-7   Bellore, Nick
+574)  34.1  2.4  27  GB -8   Perry, Nick
+575)  33.9  2.4  25  GB -8   Ryan, Jake
+576)  32.5  2.7  23  CHR-9   Perryman, Denzel
+577)  32.0  2.1  39  PIT-9   Harrison, James
+578)  31.4  2.0  33  SF -11  Brooks, Ahmad
+579)  30.9  1.9  24  DEN-5   Ray, Shane
+580)  30.5  1.9  31  TEN-8   Orakpo, Brian
+581)  29.3  1.8  28  NYG-8   Robinson, Keenan
+582)  29.0  1.8  29  WAS-5   Kerrigan, Ryan
+583)  28.6  1.9  34  BAL-10  Suggs, Terrell
+584)  28.3  1.8  25  MIN-9   Barr, Anthony
+585)  28.2  2.2  23  GB -8   Martinez, Blake
+586)  28.0  1.7  25  DAL-6   Hitchens, Anthony
+587)  27.4  1.8  26  KC -10  Ford, Dee
+588)  26.9  1.9  23  CAR-11  Thompson, Shaq
+589)  26.6  3.0  27  CHI-9   Trevathan, Danny
+590)  26.4  2.0  22  NYJ-11  Lee, Darron
+591)  25.9  1.6  26  NYG-8   Kennard, Devon
+592)  25.8  1.6  31  TEN-8   Woodyard, Wesley
+593)  25.1  1.6  26  CHR-9   Emanuel, Kyle
+594)  24.4  1.9  27  NE -9   Hightower, Dont'a
+595)  24.3  2.2  26  IND-11  Simon, John
+596)  24.1  1.7  27  ARI-8   Jones, Jarvis
+597)  24.0  1.5  24  MIA-11  Hewitt, Neville
+598)  23.9  1.8  30  HOU-7   Cushing, Brian
+599)  23.5  1.6  27  IND-11  Spence, Sean
+600)  23.1  1.9  24  CHI-9   Floyd, Leonard
+601)  22.9  2.1  24  ATL-5   Campbell, De'Vondre
+602)  22.8  1.5  28  TEN-8   Morgan, Derrick
+603)  22.5  1.4  24  WAS-5   Smith, Preston
+604)  22.1  1.6  26  NE -9   VanNoy, Kyle
+605)  21.7  2.4  31  NO -5   Ellerbe, Dannell
+606)  21.2  1.3  30  SEA-6   Wilhoite, Michael
+607)  20.8  1.9  27  DEN-5   Marshall, Brandon
+608)  20.6  1.5  23  NYJ-11  Jenkins, Jordan
+609)  19.6  1.2  30  RAM-8   Barwin, Connor
+610)  19.6  1.2  27  PIT-9   Williams, Vince
+611)  18.5  4.6  29  SF -11  Bowman, Navorro
+612)  17.5  1.1  33  KC -10  Hali, Tamba
+613)  17.4  1.5  31  GB -8   Matthews, Clay
+614)  17.4  1.1  24  RAI-10  James, Cory
+615)  17.3  1.1  22  IND-11  Morrison, Antonio
+616)  17.2  1.1  28  IND-11  Sheard, Jabaal
+617)  16.2  1.2  28  NE -9   McClellin, Shea
+618)  16.0  3.2  28  KC -10  Houston, Justin
+619)  16.0  2.3  24  PIT-9   Dupree, Bud
+620)  15.4  1.0  26  NO -5   Klein, A.J.
+621)  13.5  0.9  26  PHI-10  Kendricks, Mychal
+622)  13.4  1.0  25  BAL-10  Judon, Matt
+623)  13.4  0.8  24  DAL-6   Wilson, Damien
+624)  12.9  1.4  28  CHI-9   McPhee, Pernell
+625)  11.0  1.2  27  RAM-8   Quinn, Robert
+626)  10.4  0.8  24  BAL-10  Smith, Za'Darius
+627)   9.7  1.1  25  RAI-10  Jenkins, Jelani
+628)   9.4  0.6  22  JAC-8   Jack, Myles
+629)   9.1  0.8  24  NYJ-11  Mauldin, Lorenzo
+630)   8.5  1.2  24  SF -11  Lynch, Aaron
+631)   8.3  0.6  24  DET-7   Williams, Antwione
+632)   7.9  0.7  27  DET-7   Worrilow, Paul
+633)   7.3  2.4  30  MIA-11  Misi, Koa
+634)   6.4  0.4  23  CLE-9   Schobert, Joe
+635)   5.5  0.3  24  CIN-6   Vigil, Nick
+636)   3.1  0.4  24  HOU-7   Scarlett, Brennan
+637)   2.6  0.3  23  BAL-10  Correa, Kamalei
+638)   2.2  0.1  30  BUF-6   Humber, Ramon
+639)   2.2  0.1  28  MIN-9   Lamur, Emmanuel
+640)   0.9  0.1  28  CLE-9   Carder, Tank
+641)   0.7  0.0  24  NYG-8   Goodson, B.J.
+642)             22  IND-11  Basham, Tarell
+643)             22  ATL-5   Riley, Duke
+644)             24  BUF-6   Ragland, Reggie
+645)             22  CIN-6   Willis, Jordan
+646)             28  DAL-6   McClain, Rolando
+647)             26  IND-11  Bostic, Jonathan
+648)             22  DET-7   Davis, Jarrad
+649)             27  RAI-10  Smith, Aldon
+650)             22  RAM-8   Reddick, Haason
+651)             22  MIA-11  McMillan, Raekwon
+652)             22  NO -5   Anzalone, Alex
+653)             22  PIT-9   Watt, T.J.
+654)             22  SF -11  Foster, Reuben
+655)             22  TB -11  Beckwith, Kendell
+656)             22  WAS-5   Anderson, Ryan
+657)             22  BAL-10  Bowser, Tyus
+658)             22  HOU-7   Cunningham, Zach
+659)             24  TB -11  Bond, Devante
+660)             25  MIN-9   Robinson, Edmond
+661)             21  RAI-10  Lee, Marquel
+ 
+ 
+
+Defensive Backs
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+662)  68.8  4.3  23  NYG-8   Collins, Landon
+663)  50.8  3.2  27  TEN-8   Cyprien, Johnathan
+664)  49.8  3.1  33  ARI-8   Bethea, Antoine
+665)  47.9  3.2  29  CAR-11  Coleman, Kurt
+666)  47.7  3.4  22  ATL-5   Neal, Keanu
+667)  47.0  3.1  25  BAL-10  Jefferson, Tony
+668)  46.7  2.9  28  KC -10  Berry, Eric
+669)  45.6  2.8  24  GB -8   Clinton-Dix, Ha-Ha
+670)  44.5  2.8  26  TEN-8   Ryan, Logan
+671)  44.4  2.8  32  BAL-10  Weddle, Eric
+672)  43.7  3.1  30  DEN-5   Ward, T.J.
+673)  43.2  2.9  28  GB -8   Burnett, Morgan
+674)  42.6  2.8  36  CAR-11  Adams, Mike
+675)  42.6  2.8  27  DET-7   Wilson, Tavon
+676)  42.5  2.7  26  SEA-6   McDougald, Bradley
+677)  41.1  2.6  27  PHI-10  McLeod, Rodney
+678)  40.7  2.7  27  CHI-9   Cooper, Marcus
+679)  39.7  2.8  28  MIN-9   Smith, Harrison
+680)  38.7  2.4  33  RAI-10  Nelson, Reggie
+681)  38.7  2.4  29  PHI-10  Jenkins, Malcolm
+682)  38.5  3.2  29  JAC-8   Church, Barry
+683)  38.1  2.5  26  CIN-6   Williams, Shawn
+684)  37.8  2.4  29  DEN-5   Stewart, Darian
+685)  37.5  2.7  25  WAS-5   Breeland, Bashaud
+686)  37.3  2.3  27  KC -10  Sorensen, Daniel
+687)  37.2  2.3  24  DAL-6   Jones, Byron
+688)  37.2  2.3  27  CHR-9   Hayward, Casey
+689)  37.1  2.3  22  CAR-11  Worley, Daryl
+690)  36.9  2.6  27  MIN-9   Rhodes, Xavier
+691)  36.4  2.3  25  ATL-5   Allen, Ricardo
+692)  36.3  2.3  22  JAC-8   Ramsey, Jalen
+693)  35.8  2.2  30  NE -9   McCourty, Devin
+694)  35.7  2.2  27  NE -9   Butler, Malcolm
+695)  35.5  3.2  26  NO -5   Vaccaro, Kenny
+696)  35.5  2.2  29  WAS-5   Norman, Josh
+697)  34.4  2.2  22  TB -11  Hargreaves, Vernon
+698)  34.4  2.2  26  WAS-5   Swearinger, D.J.
+699)  34.4  2.3  26  NE -9   Gilmore, Stephon
+700)  34.3  2.3  24  KC -10  Peters, Marcus
+701)  34.3  2.1  22  NO -5   Bell, Vonn
+702)  33.7  2.6  32  CHI-9   Demps, Quintin
+703)  33.4  2.4  28  TB -11  Conte, Chris
+704)  33.0  2.2  29  SEA-6   Shead, Deshawn
+705)  33.0  2.1  28  DEN-5   Harris, Chris
+706)  32.7  2.0  30  NE -9   Chung, Patrick
+707)  32.5  2.0  34  TB -11  Grimes, Brent
+708)  32.4  2.0  27  CIN-6   Iloka, George
+709)  32.2  2.7  29  SEA-6   Chancellor, Kam
+710)  32.1  2.0  23  PIT-9   Davis, Sean
+711)  31.9  2.0  30  PIT-9   Mitchell, Mike
+712)  31.8  2.0  31  CHR-9   Lowery, Dwight
+713)  31.6  2.0  24  CHI-9   Jones-Quartey, Harold
+714)  31.3  2.0  31  DET-7   Quin, Glover
+715)  30.9  1.9  25  MIA-11  Lippett, Tony
+716)  30.0  1.9  29  SEA-6   Sherman, Richard
+717)  30.0  2.1  29  MIN-9   Sendejo, Andrew
+718)  29.9  1.9  30  KC -10  Parker, Ron
+719)  29.5  2.0  26  CLE-9   Taylor, Jamar
+720)  29.4  1.8  26  BUF-6   Hyde, Micah
+721)  28.9  1.8  28  TB -11  Tandy, Keith
+722)  28.8  1.9  28  NYG-8   Jenkins, Janoris
+723)  28.5  3.6  27  CHR-9   Addae, Jahleel
+724)  28.4  2.2  29  MIA-11  Maxwell, Byron
+725)  28.2  1.9  24  CHI-9   Amos, Adrian
+726)  27.6  1.7  22  PIT-9   Burns, Artie
+727)  27.5  1.7  33  CIN-6   Jones, Adam
+728)  27.4  1.8  25  RAI-10  Amerson, David
+729)  27.3  1.9  26  RAM-8   Joyner, Lamarcus
+730)  27.0  2.2  30  DAL-6   Scandrick, Orlando
+731)  26.8  2.1  24  CAR-11  Bradberry, James
+732)  26.7  2.1  31  DEN-5   Talib, Aqib
+733)  26.4  1.9  23  BUF-6   Darby, Ronald
+734)  26.4  1.9  29  HOU-7   Jackson, Kareem
+735)  26.3  1.8  23  KC -10  Nelson, Steven
+736)  26.0  2.6  25  SF -11  Reid, Eric
+737)  25.9  2.2  23  RAI-10  Joseph, Karl
+738)  25.0  2.8  25  IND-11  Geathers, Clayton
+739)  25.0  1.6  28  ATL-5   Alford, Robert
+740)  24.6  1.6  27  IND-11  Melvin, Rashaan
+741)  24.6  1.5  31  BAL-10  Carr, Brandon
+742)  24.4  1.7  27  RAM-8   Johnson, Trumaine
+743)  24.4  2.4  25  GB -8   Randall, Damarious
+744)  23.5  1.7  26  RAM-8   Alexander, Maurice
+745)  23.4  1.6  25  HOU-7   Hal, Andre
+746)  23.3  1.5  27  ARI-8   Peterson, Patrick
+747)  23.1  1.8  26  DET-7   Slay, Darius
+748)  22.8  3.8  29  MIA-11  Jones, Reshad
+749)  22.7  1.4  26  PIT-9   Cockrell, Ross
+750)  22.2  2.0  26  SF -11  Ward, Jimmie
+751)  22.0  1.5  26  JAC-8   Bouye, A.J.
+752)  21.6  1.4  23  PHI-10  Mills, Jalen
+753)  21.6  1.5  22  NYG-8   Apple, Eli
+754)  21.5  1.3  24  TEN-8   Byard, Kevin
+755)  21.5  1.5  28  NYJ-11  Skrine, Buster
+756)  21.5  1.4  25  SF -11  Tartt, Jaquiski
+757)  21.4  1.3  23  DAL-6   Brown, Anthony
+758)  21.0  1.9  28  SEA-6   Thomas, Earl
+759)  20.8  1.4  27  CIN-6   Kirkpatrick, Dre
+760)  20.7  1.6  28  CLE-9   Haden, Joe
+761)  20.6  1.6  26  TB -11  Wilcox, J.J.
+762)  20.4  1.4  25  MIN-9   Waynes, Trae
+763)  20.2  1.3  30  RAI-10  Smith, Sean
+764)  20.1  1.4  24  NYG-8   Adams, Andrew
+765)  20.1  1.3  27  MIA-11  Thomas, Michael
+766)  19.9  1.4  28  CHI-9   Amukamara, Prince
+767)  19.8  1.5  26  NYJ-11  Williams, Marcus
+768)  19.4  1.2  27  ARI-8   Bethel, Justin
+769)  19.0  1.9  25  ARI-8   Mathieu, Tyrann
+770)  18.8  1.2  27  JAC-8   Gipson, Tashaun
+771)  18.2  1.1  26  DET-7   Lawson, Nevin
+772)  18.2  2.3  24  ATL-5   Collins, Jalen
+773)  18.1  2.0  26  ATL-5   Trufant, Desmond
+774)  17.8  1.4  33  HOU-7   Joseph, Johnathan
+775)  16.7  2.4  24  MIA-11  Howard, Xavien
+776)  16.3  1.4  23  CLE-9   Kindred, Derrick
+777)  15.7  1.6  25  CLE-9   Reynolds, Ed
+778)  15.7  1.4  22  WAS-5   Cravens, Su'a
+779)  15.6  1.0  27  SEA-6   Lane, Jeremy
+780)  14.4  2.1  27  NYJ-11  Claiborne, Morris
+781)  13.9  1.0  29  MIA-11  Allen, Nate
+782)  12.9  2.1  26  BUF-6   Poyer, Jordan
+783)  12.4  1.1  29  BAL-10  Smith, Jimmy
+784)  12.2  0.9  22  SF -11  Robinson, Rashard
+785)  12.1  0.9  29  IND-11  Davis, Vontae
+786)  10.4  1.5  30  PHI-10  Robinson, Patrick
+787)   9.5  0.7  24  ARI-8   Williams, Brandon
+788)   9.2  0.6  26  DAL-6   Heath, Jeff
+789)   8.3  0.5  24  HOU-7   Moore, Corey
+790)   6.8  1.7  26  CHR-9   Verrett, Jason
+791)   6.6  1.1  27  NO -5   Breaux, Delvin
+792)   5.9  0.8  25  KC -10  Mitchell, Terrance
+793)   3.4  0.2  28  GB -8   House, Davon
+794)   3.3  0.2  25  SF -11  Johnson, Dontae
+795)   2.9  1.4  23  NYG-8   Thompson, Darian
+796)   1.8  0.1  26  RAM-8   Webster, Kayvon
+797)             22  BUF-6   White, Tre'Davious
+798)             22  CHI-9   Jackson, Eddie
+799)             22  CLE-9   Peppers, Jabrill
+800)             22  DAL-6   Awuzie, Chidobe
+1201)             22  DEN-5   Langley, Brendan
+1202)             22  DET-7   Tabor, Teez
+1203)             22  GB -8   King, Kevin
+1204)             22  GB -8   Jones, Josh
+1205)             22  TEN-8   Jackson, Adoree
+1206)             22  IND-11  Hooker, Malik
+1207)             22  IND-11  Wilson, Quincy
+1208)             22  RAI-10  Conley, Gareon
+1209)             22  RAI-10  Melifonwu, Obi
+1210)             22  RAM-8   Johnson, John
+1211)             22  NO -5   Lattimore, Marshon
+1212)             22  NO -5   Williams, Marcus
+1213)             22  NYJ-11  Adams, Jamal
+1214)             22  NYJ-11  Maye, Marcus
+1215)             22  PHI-10  Jones, Sidney
+1216)             22  ARI-8   Baker, Budda
+1217)             22  SF -11  Witherspoon, Ahkello
+1218)             22  SEA-6   Griffin, Shaquill
+1219)             22  TB -11  Evans, Justin
+1220)             22  BAL-10  Humphrey, Marlon
+1221)             30  BUF-6   Anderson, Colt
+ 
+
+ 
+ 
+Kickers
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+1222)  76.8  4.8  27  BAL-10  Tucker, Justin
+1223)  64.3  4.0  42  ATL-5   Bryant, Matt
+1224)  60.4  3.8  44  IND-11  Vinatieri, Adam
+1225)  52.3  3.3  33  DET-7   Prater, Matt
+1226)  51.3  3.2  28  PHI-10  Sturgis, Caleb
+1227)  50.1  3.1  30  CAR-11  Gano, Graham
+1228)  50.0  3.1  23  NO -5   Lutz, Wil
+1229)  49.4  3.1  26  JAC-8   Myers, Jason
+1230)  49.1  3.1  39  RAI-10  Janikowski, Sebastian
+1231)  48.8  3.1  29  DAL-6   Bailey, Dan
+1232)  47.0  2.9  26  WAS-5   Hopkins, Dustin
+1233)  46.8  2.9  36  HOU-7   Novak, Nick
+1234)  46.5  2.9  26  DEN-5   McManus, Brandon
+1235)  44.6  2.8  30  TEN-8   Succop, Ryan
+1236)  44.6  2.8  33  NE -9   Gostkowski, Stephen
+1237)  43.6  2.7  25  KC -10  Santos, Cairo
+1238)  41.1  2.7  26  PIT-9   Boswell, Chris
+1239)  40.2  2.5  33  GB -8   Crosby, Mason
+1240)  39.9  2.5  32  BUF-6   Hauschka, SteVen
+1241)  38.3  2.4  26  CHR-9   Lambo, Josh
+1242)  34.6  2.2  26  NYJ-11  Catanzaro, Chandler
+1243)  33.8  2.1  42  ARI-8   Dawson, Phil
+1244)  32.7  2.0  32  TB -11  Folk, Nick
+1245)  31.4  2.0  29  RAM-8   Zuerlein, Greg
+1246)  28.4  2.0  25  CLE-9   Parkey, Cody
+1247)  24.9  1.6  31  CHI-9   Barth, Connor
+1248)  21.8  1.4  24  MIA-11  Franks, Andrew
+1249)  21.4  3.1  30  MIN-9   Forbath, Kai
+1250)  17.6  1.8  35  SF -11  Gould, Robbie
+1251)  16.1  1.8  27  SEA-6   Walsh, Blair
+1252)             22  NYG-8   Rosas, Aldrick
+1253)             22  CIN-6   Elliott, Jake
+1254)             26  CLE-9   Gonzalez, Zane
+ 
+ 
+Punters
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     Name
+--------------------------------------------------
+1255)  64.9  4.1  27  RAM-8   Hekker, Johnny
+1256)  51.5  3.2  28  RAI-10  King, Marquette
+1257)  44.0  2.8  35  BAL-10  Koch, Sam
+1258)  43.6  2.7  26  NYG-8   Wing, Brad
+1259)  42.6  2.7  41  HOU-7   Lechler, Shane
+1260)  41.6  2.6  28  TB -11  Anger, Bryan
+1261)  41.3  2.6  35  KC -10  Colquitt, Dustin
+1262)  40.7  2.5  24  DEN-5   Dixon, Riley
+1263)  39.6  2.5  27  JAC-8   Nortman, Brad
+1264)  38.4  2.4  25  MIA-11  Darr, Matt
+1265)  37.5  2.3  27  DET-7   Martin, Sam
+1266)  36.9  2.3  23  SF -11  Pinion, Bradley
+1267)  36.6  2.3  32  CIN-6   Huber, Kevin
+1268)  35.2  2.2  31  TEN-8   Kern, Brett
+1269)  34.3  2.1  31  NO -5   Morstead, Thomas
+1270)  34.2  2.1  32  CLE-9   Colquitt, Britton
+1271)  32.9  2.1  26  PIT-9   Berry, Jordan
+1272)  31.2  1.9  27  IND-11  Locke, Jeff
+1273)  31.0  1.9  28  DAL-6   Jones, Chris
+1274)  30.2  1.9  27  NE -9   Allen, Ryan
+1275)  29.9  1.9  35  SEA-6   Ryan, Jon
+1276)  29.8  1.9  37  PHI-10  Jones, Donnie
+1277)  28.1  1.8  26  CHI-9   O'Donnell, Patrick
+1278)  28.0  1.8  24  CHR-9   Kaser, Drew
+1279)  26.8  1.7  25  NYJ-11  Edwards, Lachlan
+1280)  26.4  1.8  29  ATL-5   Bosher, Matt
+1281)  25.4  2.8  35  CAR-11  Lee, Andy
+1282)  22.3  1.4  26  BUF-6   Schmidt, Colton
+1283)  20.9  1.3  27  WAS-5   Way, Tress
+1284)  20.8  1.3  28  GB -8   Schum, Jacob
+1285)  11.4  1.9  27  MIN-9   Quigley, Ryan
+1286)   4.6  1.2  25  ARI-8   Wile, Matt
+1287)             28  GB -8   Vogel, Justin
+ 
+ 
+
+Kickoff and Punt Return Teams
+
+SS   2016   Pts      Team
+Plyr Total  per      and     
+No.  Pts    game Age Bye     
+--------------------------------------------------
+1288)  43.1  2.7      KC -10
+1289)  37.4  2.3      PHI-10
+1290)  37.2  2.3      MIN-9 
+1291)  30.6  1.9      MIA-11
+1292)  29.8  1.9      RAM-8 
+1293)  26.5  1.7      CIN-6 
+1294)  25.4  1.6      SEA-6 
+1295)  25.3  1.6      DET-7 
+1296)  23.2  1.4      BUF-6 
+1297)  22.1  1.4      WAS-5 
+1298)  22.1  1.4      CAR-11
+1299)  21.6  1.3      IND-11
+1300)  21.3  1.3      BAL-10
+1301)  20.3  1.3      NYG-8 
+1302)  20.1  1.3      JAC-8 
+1303)  19.6  1.2      CHI-9 
+1304)  18.3  1.1      HOU-7 
+1305)  16.5  1.0      RAI-10
+1306)  15.7  1.0      DEN-5 
+1307)  15.2  1.0      ATL-5 
+1308)  14.7  0.9      PIT-9 
+1309)  14.3  0.9      NYJ-11
+1310)  13.0  0.8      SF -11
+1311)  12.6  0.8      NE -9 
+1312)  12.2  0.8      GB -8 
+1313)  12.0  0.8      ARI-8 
+1314)   9.9  0.6      TEN-8 
+1315)   9.0  0.6      CLE-9 
+1316)   9.0  0.6      DAL-6 
+1317)   6.1  0.4      NO -5 
+1318)   5.6  0.4      CHR-9 
+1319)   4.7  0.3      TB -11
+ 
+ 
+ 
+
+SS    2016   Pts      Team
+Plyr  Total  per      and     
+No.   Pts    game Age Bye    Pos Name
+--------------------------------------------------
+1320)  41.6  3.2  29  PHI-10 RB  Mathews, Ryan
+1321)  32.2  2.5  32  NYG-8  RB  Jennings, Rashad
+1322)  44.8  2.8  36  DET-7  WR  Boldin, Anquan
+1323)  46.9  2.9  32  BAL-10 TE  Pitta, Dennis
+1324)  37.7  2.4  31  CLE-9  TE  Barnidge, Gary
+1325)  30.1  1.9  29  NO -5  DL  Fairley, Nick
+1326)  59.3  4.0  25  BAL-10 LB  Orr, Zachary
+1327)  33.7  2.1  26  WAS-5  LB  Murphy, Trent
+1328)   3.0  1.5  24  WAS-5  WR  Doctson, Josh
+1329)   6.6  0.4  24  RAM-8  TE  Higbee, Tyler
+1330)  26.4  1.7  23  TB -11  K  Aguayo, Roberto
+1331)  21.2  1.8  30  BUF-6  DB  Wright, Shareece
+1332)   6.2  1.6  24  CLE-9  QB  Hogan, Kevin
+1333)  22.3  1.4  23  JAC-8  DL  Fowler, Dante
+1334)  21.6  4.3  34  MIA-11 QB  Cutler, Jay
+1335)   6.7  0.4  23  GB -8  DL  Lowry, Dean
+1336)             24  DAL-6  LB  Smith, Jaylon
+1337)  13.8  0.9  23  MIA-11 RB  Drake, Kenyan
+1338)  22.5  1.4  27  NE -9  RB  Burkhead, Rex
+1339)             22  CHI-9  RB  Cohen, Tarik
+1340)             22  DEN-5  TE  Butt, Jake
+1341)             23  NE -9  TE  Hollister, Jacob
+1342)             23  NE -9  WR  Hollister, Cody
+1343)  21.5  1.4  25  PHI-10 TE  Burton, Trey
+1344)             22  SEA-6  RB  Carson, Chris
+1345)             24  DEN-5  RB  Henderson, De'Angelo
+1346)  12.5  0.8  27  DET-7  DL  Washington, Cornelius
+1347)             23  DAL-6  TE  Gathers, Rico
+1348)             23  BAL-10 TE  Williams, Maxx
+1349)             23  Sea-6  WR  Williams, Kasen
+1350)  11.2  1.9  30  ARI-8  DB  Branch, Tyvon
+1351)  13.3  1.0  23  PHI-10 RB  Smallwood, Wendell
+1352)             24  MIN-9  K   Koehn, Marshall
+1353)   6.9  2.3  26  NO -5  LB  Te'o, Manti
+1354)             21  TB -11 RB  McNichols, Jeremy
+1355)             22  BAL-10 LB  Williams, Tim
+1356)             23  BUF-6  QB  Peterman, Nathan
+1357)             23  BAL-10 RB  Mizzell, Taquan
+1358)             22  CIN-6  WR  Malone, Josh
+1359)             22  PHI-10 WR  Hollins, Mack
+1360)   3.0  0.5  24  BAL-10 TE  Boyle, Nick
+1361)             23  MIA-11 P   Haack, Matt
+1362)             22  SF -11 RB  Breida, Matt
+1363)             22  IND-11 P   Sanchez, Rigoberto
+1364)             22  CHR-9  DB  King, Desmond
+1365)  10.3  0.9  23  DET-7  RB  Washington, Dwayne
+1366)             23  DEN-5  QB  Kelly, Chad
+1367)             24  KC -10 WR  Robinson, Demarcus
+1368)   7.5  0.7  25  NYG-8  RB  Darkwa, Orleans
+1369)             22  MIN-9  DL  Johnson, Jaleel
+1370)             25  DET-7  P   Redfern, Kasey
+1371)             22  CAR-11 K   Butker, Harrison
+1372)             25  CAR-11 P   Palardy, Michael
+1373)             23  CHR-9  K   Koo, Younghoe
+1374)  10.0  2.0  27  CIN-6  K   Bullock, Randy
+1375)  19.2  1.5  23  DEN-5  DB  Simmons, Justin
+1376)             22  NO -5  WR  Carr, Austin
+1377)             22  CIN-6  LB  Lawson, Carl
+1378)  24.0  1.7  24  CLE-9  WR  Coates, Sammie
+1379)  29.1  1.8  29  SEA-6  DB  Brock, Tramaine
+1380)             23  MIN-9  QB  Sloter, Kyle
+1381)             22  CHR-9  RB  Ekeler, Austin
+1382)             22  RAM-8  DL  Smart, Tanzel
+1383)  11.2  1.0  25  JAC-8  RB  Grant, Corey
+1384)   0.4  0.0  25  JAC-8  TE  O'Shaughnessy, James
+1385)             23  SF -11 WR  Taylor, Trent
+1386)  15.8  1.2  22  WAS-5  DB  Fuller, Kendall
+1387)             29  WAS-5  LB  Galette, Junior
+1388)   1.9  0.2  26  BAL-10 RB  Allen, Javorius
+1389)             21  RAM-8  RB  Davis, Justin
+1390)  25.2  2.3  25  BUF-6  DB  Gaines, E.J.
+1391)  23.5  1.5  31  CHI-9  LB  Young, Willie
+1392)   3.4  0.6  25  CIN-6  DL  Smith, Chris
+1393)   0.9  0.5  23  RAI-10 DL  Edwards, Mario
+1394)  32.5  2.2  31  NYG-8  DB  Rodgers-Cromartie, Dominique
+1395)   3.4  0.4  26  NYG-8  DL  Thomas, Robert
+1396)   3.8  0.2  28  BUF-6  RB  DiMarco, Patrick
+1397)   7.6  0.5  31  BUF-6  RB  Tolbert, Mike
+1398)  18.1  1.1  28  CHI-9  WR  Bellamy, Joshua
+1399)             25  CHI-9  RB  Burton, Michael
+1400)  16.4  1.0  28  CHI-9  WR  Thompson, Deonte
+1401)   5.7  0.4  24  CIN-6  TE  Kroft, Tyler
+1402)             22  CLE-9  RB  Dayes, Matthew
+1403)  15.0  0.9  27  DAL-6  WR  Butler, Brice
+1404)             25  IND-11 WR  Hazel, Matt
+1405)   4.2  0.4  24  KC -10 WR  Thomas, De'Anthony
+1406)   0.8  0.1  27  RAM-8  TE  Carrier, Derek
+1407)             25  NYJ-11 TE  Tomlinson, Eric
+1408)  17.1  1.1  26  SF -11 RB  Juszczyk, Kyle
+1409)  18.9  1.2  28  SF -11 WR  Robinson, Aldrick
+1410)   1.9  0.2  24  SEA-6  TE  Vannett, Nick
+1411)   4.8  0.3  26  WAS-5  WR  Grant, Ryan
+1412)  20.0  1.3  28  CAR-11 RB  Whittaker, Fozzy
+1413)   6.6  0.4  28  JAC-8  WR  Benn, Arrelious
+1414)             26  JAC-8  RB  Bohanon, Tommy
+1415)   6.9  0.5  24  HOU-7  TE  Anderson, Stephen
+1416)   1.1  0.1  23  HOU-7  RB  Ervin, Tyler
+1417)   5.8  0.4  28  NYG-8  TE  Ellison, Rhett
+1418)             24  ATL-5  DB  Kazee, Damontae
+1419)  27.7  1.7  24  ATL-5  DB  Poole, Brian
+1420)  14.5  1.0  30  ATL-5  DL  Reed, Brooks
+1421)  12.4  1.2  27  BUF-6  DB  Johnson, Leonard
+1422)  13.4  0.9  24  BUF-6  DL  Washington, Adolphus
+1423)             24  BUF-6  DL  Yarbrough, Eddie
+1424)  12.5  0.8  29  CHI-9  LB  Acho, Sam
+1425)  12.4  1.1  25  CHI-9  DB  Callahan, Bryce
+1426)             25  CHI-9  DB  Fuller, Kyle
+1427)  18.5  1.3  24  CHI-9  LB  Kwiatkoski, Nick
+1428)  15.2  1.0  25  CIN-6  DB  Dennard, Darqueze
+1429)   1.8  0.1  24  CIN-6  DB  Fejedelem, Clayton
+1430)             23  CIN-6  DL  Glasgow, Ryan
+1431)             24  CIN-6  DB  Jackson, William
+1432)  30.9  1.9  30  CIN-6  LB  Rey, Vincent
+1433)  18.7  1.2  25  CIN-6  DB  Shaw, Josh
+1434)  19.6  1.2  31  CIN-6  DL  Sims, Pat
+1435)  29.4  2.1  24  CLE-9  DB  Boddy-Calhoun, Briean
+1436)             23  CLE-9  DL  Coley, Trevon
+1437)  28.9  2.1  30  CLE-9  DB  McCourty, Jason
+1438)             23  CLE-9  DL  Ogunjobi, Larry
+1439)  17.1  1.1  30  DAL-6  DB  Carroll, Nolan
+1440)  15.2  1.2  31  DAL-6  LB  Durant, Justin
+1441)   0.7  0.1  23  DAL-6  DB  Frazier, Kavon
+1442)   5.9  0.5  29  DAL-6  DL  Paea, Stephen
+1443)             24  DAL-6  DL  Tapper, Charles
+1444)             22  DET-7  DB  Agnew, Jamal
+1445)  19.6  1.6  24  DET-7  DB  Diggs, Quandre
+1446)  10.7  1.0  27  DET-7  DB  Hayden, DJ
+1447)   9.6  0.6  24  DET-7  DB  Killebrew, Miles
+1448)             23  DET-7  DL  Ledbetter, Jeremiah
+1449)  10.0  0.6  25  DET-7  DL  Spence, Akeem
+1450)             22  DET-7  DL  Valoaga, Jeremiah
+1451)   7.9  0.6  25  DET-7  DL  Zettel, Anthony
+1452)   8.9  0.6  23  GB -8  DB  Brice, Kentrell
+1453)   7.2  0.6  25  GB -8  LB  Fackrell, Kyler
+1454)  19.1  1.5  25  GB -8  DB  Rollins, Quinten
+1455)             22  TEN-8  LB  Brown, Jayon
+1456)  13.7  1.0  29  TEN-8  DL  Klug, Karl
+1457)  18.5  1.2  30  TEN-8  DB  McCain, Brice
+1458)  19.3  1.4  28  TEN-8  DB  Searcy, Da'Norris
+1459)             24  TEN-8  DB  Smith, Tye
+1460)  32.8  2.1  32  TEN-8  LB  Walden, Erik
+1461)  20.3  1.7  31  IND-11 DB  Butler, Darius
+1462)   1.8  0.1  25  IND-11 DB  Farley, Matthias
+1463)             25  IND-11 LB  George, Jeremiah
+1464)  15.5  1.0  22  IND-11 DB  Green, T.J.
+1465)             23  IND-11 DB  Hairston, Nate
+1466)   1.8  0.1  26  IND-11 LB  Mingo, Barkevious
+1467)  10.6  0.9  30  IND-11 DL  Woods, Al
+1468)  21.0  1.9  26  KC -10 DB  Gaines, Phillip
+1469)   6.5  1.1  30  KC -10 DL  Miller, Roy
+1470)   2.1  0.1  23  KC -10 DB  Murray, Eric
+1471)  18.5  1.2  30  KC -10 LB  Zombo, Frank
+1472)             25  RAI-10 LB  Adams, Tyrell
+1473)  12.1  0.8  27  RAI-10 DB  Carrie, TJ
+1474)             25  RAI-10 DB  McDonald, Dexter
+1475)             22  RAI-10 LB  Morrow, Nicholas
+1476)   6.9  1.4  24  RAM-8  DB  Countess, Blake
+1477)             22  RAM-8  LB  Ebukam, Samson
+1478)   5.4  1.4  22  RAM-8  DL  Fox, Morgan
+1479)             25  RAM-8  LB  Hager, Bryce
+1480)             22  RAM-8  DB  Hatfield, Dominique
+1481)   3.6  0.2  23  RAM-8  LB  Littleton, Cory
+1482)   4.0  0.7  25  RAM-8  LB  Longacre, Matt
+1483)  20.6  1.3  25  RAM-8  DB  Robey-Coleman, Nickell
+1484)  15.1  1.0  27  RAM-8  DL  Walker, Tyrunn
+1485)             23  NE -9  DL  Butler, Adam
+1486)  17.4  1.1  27  NE -9  DL  Guy, Lawrence
+1487)  14.7  0.9  25  NE -9  DL  Marsh, Cassius
+1488)             24  NE -9  DB  Richards, Jordan
+1489)   9.6  1.1  24  NE -9  DB  Rowe, Eric
+1490)             23  NE -9  DL  Wise, Deatrich
+1491)   7.9  0.5  25  NYG-8  DL  Bromley, Jay
+1492)  10.5  0.7  22  NYG-8  DL  Okwara, Romeo
+1493)   4.8  0.3  26  NYG-8  DL  Wynn, Kerry
+1494)   1.9  0.2  25  NYJ-11 DB  Brooks, Terrence
+1495)   5.7  0.4  24  NYJ-11 DB  Burris, Juston
+1496)             25  NYJ-11 LB  Donahue, Dylan
+1497)   0.7  0.0  25  NYJ-11 LB  Martin, Josh
+1498)             24  NYJ-11 DL  Pelon, Claude
+1499)   4.6  0.6  26  NYJ-11 DL  Pennel, Mike
+1500)   5.8  0.6  27  NYJ-11 LB  Stanford, Julian
+1501)  34.1  2.1  32  PHI-10 DB  Graham, Corey
+1502)  10.7  0.7  23  PHI-10 DL  Vaeao, Destiny
+1503)  11.4  0.7  25  PHI-10 DB  Watkins, Jaylen
+1504)  15.6  1.7  28  ARI-8  LB  Bynes, Josh
+1505)   2.4  0.5  27  ARI-8  TE  Momah, Ifeanyi
+1506)   8.3  0.6  33  ARI-8  DL  Rucker, Frostee
+1507)   3.5  0.4  25  ARI-8  DL  Williams, Xavier
+1508)  24.7  1.8  30  PIT-9  DL  Alualu, Tyson
+1509)  15.5  1.0  24  PIT-9  LB  Chickillo, Anthony
+1510)  25.3  1.6  32  PIT-9  DB  Gay, William
+1511)             23  PIT-9  DB  Hilton, Mike
+1512)   5.2  0.5  25  PIT-9  DL  Walton, L.T.
+1513)   5.9  2.9  26  SF -11 LB  Armstrong, Ray-Ray
+1514)   6.2  0.5  27  SF -11 DL  Carradine, Tank
+1515)  20.0  1.3  23  SF -11 LB  Harold, Eli
+1516)             22  SF -11 DL  Jones, D.J.
+1517)   4.9  0.3  29  SF -11 LB  Watson, Dekoda
+1518)             26  SF -11 DB  Williams, K'Waun
+1519)   4.4  0.3  26  SEA-6  DL  Bass, David
+1520)   1.5  0.2  24  SEA-6  DB  Coleman, Justin
+1521)   3.6  0.2  26  SEA-6  LB  Garvin, Terence
+1522)             22  SEA-6  DL  Jones, Nazair
+1523)   9.3  0.6  25  SEA-6  DL  Smith, Marcus
+1524)   3.3  0.2  25  WAS-5  DB  Everett, Deshazor
+1525)   4.2  0.4  23  WAS-5  DL  Ioannidis, Matt
+1526)  11.6  1.1  27  CAR-11 DL  Horton, Wes
+1527)  11.5  1.1  30  CAR-11 DL  Love, Kyle
+1528)             23  JAC-8  DL  Ankou, Eli
+1529)   9.8  1.0  25  JAC-8  DB  Colvin, Aaron
+1530)   6.7  0.4  23  JAC-8  DL  Day, Sheldon
+1531)   4.6  0.4  27  JAC-8  LB  McCray, Lerentee
+1532)   2.4  0.2  30  BAL-10 DB  Levine, Anthony
+1533)             23  BAL-10 DL  Ricard, Patrick
+1534)  31.0  1.9  31  BAL-10 DB  Webb, Lardarius
+1535)   1.8  0.9  25  HOU-7  DL  Dunn, Brandon
+1536)  26.3  2.0  28  HOU-7  DB  Gilchrist, Marcus
+1537)   5.9  0.5  24  HOU-7  DL  Heath, Joel
+1538)  10.9  1.8  25  HOU-7  DB  Johnson, Kevin
+1539)   0.9  0.1  28  HOU-7  LB  Peters, Brian
+1540)   6.8  0.5  28  HOU-7  DB  Pleasant, Eddie
+1541)             27  RAI-10 K   Tavecchio, Giorgio
+1542)             23  HOU-7  K   Fairbairn, Ka'imi
+1543)   7.4  0.6  24  DEN-5  TE  Heuerman, Jeff
+1544)  12.3  0.8  34  NO -5  RB  Kuhn, John
+1545)   4.8  0.4  24  NO -5  WR  Lewis, Tommylee
+1546)  15.5  1.0  24  DEN-5  LB  Barrett, Shaquil
+1547)   6.5  0.4  24  DEN-5  DL  Gotsis, Adam
+1548)             26  DEN-5  DL  Harris, Shelby
+1549)             23  DEN-5  DL  Jarrett, Tyrique
+1550)  22.5  1.4  25  DEN-5  LB  Nelson, Corey
+1551)   7.4  0.5  23  DEN-5  DB  Parks, Will
+1552)  26.7  1.7  25  DEN-5  DB  Roby, Bradley
+1553)             22  MIN-9  LB  Gedeon, Ben
+1554)  16.6  1.1  39  MIN-9  DB  Newman, Terence
+1555)  17.8  1.1  26  MIN-9  DL  Stephen, Shamar
+1556)   4.5  0.4  24  NO -5  DB  Harris, De'Vante
+1557)   9.2  0.6  26  NO -5  DL  Okafor, Alex
+1558)   8.7  0.5  24  NO -5  DL  Onyemata, David
+1559)   2.6  1.3  24  NO -5  DB  Williams, P.J.
+1560)  27.8  1.9  25  CHR-9  DB  Boston, Tre
+1561)             25  CHR-9  DL  McCain, Chris
+1562)  15.1  1.1  25  CHR-9  DB  Phillips, Adrian
+1563)   6.4  0.5  23  CHR-9  DL  Philon, Darius
+1564)   1.8  0.1  25  CHR-9  LB  Pullard, Hayes
+1565)             22  CHR-9  DL  Rochell, Isaac
+1566)   9.8  0.9  28  CHR-9  DL  Square, Damion
+1567)  14.1  1.2  23  CHR-9  DB  Williams, Trevor
+1568)  31.9  2.1  27  MIN-9  WR  Floyd, Michael
+1569)   4.7  1.2  31  ARI-8  RB  Johnson, Chris
+1570)  16.3  1.0  25  ATL-5  WR  Hardy, Justin
+1571)   0.3  0.0  25  DAL-6  RB  Smith, Rod
+1572)   2.6  0.2  24  GB -8  WR  Davis, Trevor
+1573)   1.8  0.1  29  IND-11 TE  Williams, Brandon
+1574)   6.8  0.5  28  RAM-8  DB  Davis, Cody
+1575)   2.9  0.2  23  NE -9  DB  Jones, Jonathan
+1576)  13.4  1.0  29  TB -11 DB  McClain, Robert
+1577)             24  JAC-8  DL  Bennett, Michael
+1578)             22  CHI-9  WR  Gentry, Tanner
+1579)   4.0  0.3  24  CIN-6  WR  Erickson, Alex
+1580)   0.6  0.0  25  CLE-9  TE  Telfer, Randall
+1581)   4.6  0.4  24  DEN-5  WR  Latimer, Cody
+1582)             25  TEN-8  RB  Fluellen, David
+1583)   0.7  0.0  27  TEN-8  RB  Fowler, Jalston
+1584)             22  TEN-8  TE  Smith, Jonnu
+1585)   2.4  0.6  29  RAI-10 TE  Smith, Lee
+1586)             22  RAM-8  WR  Reynolds, Josh
+1587)             24  MIN-9  RB  Ham, C.J.
+1588)   1.0  0.1  29  NE -9  RB  Develin, James
+1589)             29  NO -5  TE  Hoomanawanui, Michael
+1590)             23  NYJ-11 RB  McGuire, Elijah
+1591)   0.0  0.0  23  NYJ-11 WR  Raymond, Kalif
+1592)   6.8  0.7  25  NYJ-11 TE  Sterling, Neal
+1593)   4.4  0.4  29  ARI-8  WR  Golden, Brittan
+1594)   2.7  2.7  24  PIT-9  RB  Watson, Terrell
+1595)   1.4  0.1  29  CHR-9  TE  McGrath, Sean
+1596)   3.7  0.2  24  CHR-9  RB  Watt, Derek
+1597)  10.7  0.7  23  TB -11 RB  Barber, Peyton
+1598)   3.7  0.3  24  TB -11 TE  Cross, Alan
+1599)             24  JAC-8  WR  Cole, Keelan
+1600)   8.8  0.8  23  BAL-10 RB  Collins, Alex
+1601)  15.7  1.0  29  ATL-5  DL  Crawford, Jack
+1602)   5.2  0.9  28  ATL-5  DL  Shelby, Derrick
+1603)   3.0  0.3  28  BUF-6  DL  Davis, Ryan
+1604)  15.0  1.2  29  BUF-6  DL  Thornton, Cedric
+1605)   0.7  0.1  25  CHI-9  LB  Anderson, Jonathan
+1606)  12.2  0.9  23  CHI-9  DL  Bullard, Jonathan
+1607)             26  CHI-9  LB  Joness, Christian
+1608)  23.2  1.8  23  CHI-9  DB  LeBlanc, Cre'von
+1609)             24  CHI-9  DL  Robertson-Harris, Roy
+1610)             23  CLE-9  LB  Burgess, James
+1611)   1.6  0.5  24  CLE-9  DL  Orchard, Nate
+1612)             22  DAL-6  DB  Lewis, Jourdan
+1613)  22.3  1.7  26  DAL-6  DL  Mayowa, Benson
+1614)             23  DAL-6  DL  Price, Brian
+1615)   1.9  0.1  28  DAL-6  LB  Wilber, Kyle
+1616)   4.9  0.3  28  DEN-5  LB  Edebali, Kasim
+1617)  18.5  1.3  27  GB -8  DL  Dial, Quinton
+1618)  30.1  1.9  26  GB -8  LB  Thomas, Joe
+1619)             25  TEN-8  DB  Riley, Curtis
+1620)   8.2  0.6  23  TEN-8  DB  Sims, LeShaun
+1621)  13.9  1.3  24  KC -10 DL  Nunez-Roches, Rakeem
+1622)   4.1  0.7  26  RAI-10 LB  Cowser, James
+1623)             24  RAI-10 DL  Hester, Treyvon
+1624)             24  MIA-11 LB  Allen, Chase
+1625)             22  MIA-11 DL  Godchaux, Davon
+1626)   6.8  0.4  26  MIA-11 LB  Hull, Mike
+1627)  18.0  1.1  24  MIA-11 DB  McCain, Bobby
+1628)             23  MIA-11 DL  Taylor, Vincent
+1629)   0.8  0.1  23  MIN-9  DB  Alexander, Mackensie
+1630)  13.8  0.9  26  NE -9  DB  Harmon, Duron
+1631)  18.2  1.4  23  NE -9  LB  Roberts, Elandon
+1632)  24.7  1.5  30  NO -5  DB  Bush, Rafael
+1633)             22  NO -5  DL  Hendrickson, Trey
+1634)  21.5  1.7  27  NO -5  DB  Moore, Sterling
+1635)   6.8  0.6  26  NYJ-11 DB  Roberts, Darryl
+1636)  17.3  1.1  25  PHI-10 DL  Allen, Beau
+1637)             22  PHI-10 DB  Douglas, Rasul
+1638)             26  ARI-8  DL  Pierre, Olsen
+1639)             22  CHR-9  LB  Harris, Nigel
+1640)   7.2  0.6  26  CHR-9  DL  Palepoi, Tenny
+1641)   3.7  0.2  26  TB -11 LB  Glanton, Adarius
+1642)  22.8  1.9  30  TB -11 DL  McDonald, Clinton
+1643)   3.4  0.4  25  TB -11 DL  Russell, Ryan
+1644)             24  TB -11 DB  Smith, Ryan
+1645)             21  WAS-5  DB  Nicholson, Montae
+1646)   8.2  0.8  23  CAR-11 DL  Butler, Vernon
+1647)  22.5  1.5  29  CAR-11 DB  Munnerlyn, Captain
+1648)   2.4  0.2  25  BAL-10 LB  Onwuasor, Patrick
+1649)             23  HOU-7  LB  Cole, Dylan
+1650)   9.1  0.7  24  NYG-8  TE  Adams, Jerell
+1651)             22  DET-7  LB  Reeves-Maybin, Jalen
+1652)             22  NYG-8  LB  Munson, Calvin
