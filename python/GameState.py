@@ -93,7 +93,7 @@ class GameState:
       with open('result.txt') as res:
         for l in res:
           line = l.split(",")
-          self.action(line[0], 'off', offense, defense)
+          self.action(line, 'off', offense, defense)
 
       with open('vid/state4.txt','w') as sth:
         sth.write("MOVE DEFENSE\n\n")
