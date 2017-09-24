@@ -1,6 +1,7 @@
-from Field import Field
+#from Field import Field
 from Clock import Clock
 from Team import Team
+from Ball import Ball
 import subprocess
 
 class GameState:
@@ -14,12 +15,14 @@ class GameState:
     self.hometeam = team1
     self.awayteam = team2
     self.clock = Clock(halfsecs, ticktime)
-    self.field = Field("sss","ddd")
+    #self.field = Field("sss","ddd")
     self.down = 1
     self.to_go = 10
     self.yardline = 20
     self.ball_in_play = False
     self.gameover = False
+
+    self.ball = Ball
 
   def update(self):
     # ----------- Pre-Snap ---------------
@@ -68,21 +71,21 @@ class GameState:
         d_players.append(defense.players[int(line[2])-1])
 
     self.ball_in_play = True
-    self.field.ball.set_position(0,0,.1)
-    self.field.ball.snap()
+    self.ball.set_position(0,0,.1)
+    self.ball.snap(1)
     # ------------- During Play --------------
     # Offense State
     p = 99
     while self.ball_in_play:
       p+=1
-      with open('state'+str(p)+'.txt','w') as sth:
+      with open('vid/state'+str(p)+'.txt','w') as sth:
         sth.write("MOVE OFFENSE\n\n")
         for opl in o_players:
           sth.write(opl.get_stat_with_pos_csv()+"\n")
         sth.write("\n")
         for dpl in d_players:
           sth.write(dpl.get_position_csv()+"\n")
-        sth.write("\nBALL,"+ self.field.ball.get_status()+"\n")
+        sth.write("\nBALL,"+ self.ball.get_status()+"\n")
         self.footer(sth, offense, defense)
 
       subprocess.call(['lua5.3', 'run_ai.lua', 'state'+str(p)+'.txt', offense.ai],shell=False)
@@ -99,7 +102,7 @@ class GameState:
         sth.write("\n")
         for dpl in d_players:
           sth.write(dpl.get_stat_with_pos_csv()+"\n")
-        sth.write("\nBALL,"+ self.field.ball.get_status()+"\n")
+        sth.write("\nBALL,"+ self.ball.get_status()+"\n")
         self.footer(sth, offense, defense)
 
       subprocess.call(['lua5.3', 'run_ai.lua', 'state4.txt', defense.ai],shell=False)
@@ -110,7 +113,7 @@ class GameState:
           self.action(line, 'def', offense, defense)
 
       # Update the field
-      self.field.update()
+      self.ball.update(o_players, d_players)
 
       # Tick the Clock
       self.clock.update()
@@ -152,10 +155,10 @@ class GameState:
       elif side == 'off':
         offense.players[int(act[1])-1].move(act[2][0], f_dir, defense.players)
     elif act[0] == "THROW":
-      held = self.field.ball.held
-      if self.field.ball.held:
-        self.field.ball.held.player_hold()
-        self.field.ball.throw(act[1], act[2])
+      held = self.ball.held
+      if self.ball.held:
+        self.ball.held.player_hold()
+        self.ball.throw(act[1], act[2])
 
 
   def get_direction(self, side):

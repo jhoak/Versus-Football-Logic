@@ -35,11 +35,26 @@ class Ball:
     self.y_speed = ((math.sqrt(2)*vel)/2) * math.atan(abs(y-self.y)/abs(x-self.x))
     self.x_speed = self.z_speed-self.y_speed
 
-  def snap(self):
-    self.throw(-7000, 0)
+  def snap(self, dir):
+    self.throw(dir*7000, 0)
 
-  def update(self):
+  def update(self, o_players, d_players):
+
     if not self.held:
+
+      for pl in o_players:
+        if pl.can_catch:
+          if self.check_if_near(pl.x, pl.y):
+            self.player_hold(pl)
+            break
+
+      if not self.held:
+        for pl in d_players:
+          if pl.can_catch:
+            if self.check_if_near(pl.x, pl.y):
+              self.player_hold(pl)
+              break
+
       self.x += self.x_speed
       self.y += self.y_speed
       self.z += self.z_speed
@@ -47,6 +62,14 @@ class Ball:
       if self.z <= 0:
         self.setvector(0,0,0)
         self.z = 0
+
+
+
+  def check_if_near(x, y):    
+    x_collide = abs(a[0] - b[0]) <= 500
+    y_collide = abs(a[1] - b[1]) <= 500
+    return x_collide and y_collide
+
 
   def player_hold(self, player):
     self.held = player

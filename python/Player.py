@@ -125,8 +125,8 @@ class Player:
     csv = ""
     csv += str(self.stats[0]) + ","
     csv += str(self.stats[1]) + ","
-    csv += str(int(self.x)) + ","
-    csv += str(int(self.y))
+    csv += str(-1*int(self.x)) + ","
+    csv += str(-1*int(self.y))
 
     return csv
 
