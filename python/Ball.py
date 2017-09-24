@@ -31,7 +31,7 @@ class Ball:
   def throw(self, x, y):
     if x < 0:
       r = -1
-    dist = math.sqrt(math.pow(x-self.x, 2)+math.pow(y-self.y, 2))
+    dist = math.sqrt(math.pow(x-int(self.x), 2)+math.pow(y-int(self.y), 2))
     vel = math.sqrt(dist/self.gravity) * self.gravity
     if self.held:
       acc = 50-(int(self.held.passing)/4)
