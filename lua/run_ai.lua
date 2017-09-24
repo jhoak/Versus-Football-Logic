@@ -22,7 +22,10 @@ function save_results()
       io.write("SET,QB,", key, ",", value[2], "\n")
     end
 
-
+    --Move command
+    if(value[1] == "MOVE") then
+      io.write("MOVE,", key, ",", value[2], "\n")
+    end
   end
 end
 
