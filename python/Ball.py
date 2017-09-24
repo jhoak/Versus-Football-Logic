@@ -35,7 +35,7 @@ class Ball:
     if int(x) < 0:
       r = -1
     if r:
-      x+=500
+      int(x)+=500
     dist = math.sqrt(math.pow(int(x)-int(self.x), 2)+math.pow(int(y)-int(self.y), 2))
     vel = math.sqrt(dist/self.gravity) * self.gravity
     if self.held:
