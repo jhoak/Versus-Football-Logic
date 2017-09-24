@@ -11,13 +11,14 @@ class GameState:
     self.half = 1
     self.ticks_left = halfsecs/ticktime
     # Create the teams from the rosters
-    self.hometeam = Team("Name", "home", 'roster1.txt', 'dumb')
-    self.awayteam = Team("xXx_TeAm_NaMe_xXx", "away", 'roster2.txt', 'dumb')
+    self.hometeam = Team("Name", "home", 'example_io/roster1.txt', 'dumb')
+    self.awayteam = Team("xXx_TeAm_NaMe_xXx", "away", 'example_io/roster1.txt', 'dumb')
     self.clock = Clock(halfsecs, ticktime)
-    self.field = Field("sss")
+    self.field = Field("sss","ddd")
     self.down = 1
     self.to_go = 10
     self.yardline = 20
+    self.gameover = False
 
   def update(self, commands):
     # Update the field
@@ -67,15 +68,15 @@ class GameState:
   def get_half(self):
     return str(self.half)
 
-  def get_offense(self)
-    if hometeam.hasball:
-      return hometeam
-    return awayteam
+  def get_offense(self):
+    if self.hometeam.hasball:
+      return self.hometeam
+    return self.awayteam
 
-  def get_defense(self)
-    if hometeam.hasball:
-      return awayteam
-    return hometeam
+  def get_defense(self):
+    if self.hometeam.hasball:
+      return self.awayteam
+    return self.hometeam
 
 #--------------------------------------------------
 
@@ -93,8 +94,8 @@ def footer(file, gs, offense, defense):
 
 gs = GameState(300.0, 0.1)
 
-while True:
-
+while not gs.gameover:
+  # ------------ Pre-snap -----------------------
   active_players = []
 
   offense = gs.get_offense()
@@ -110,12 +111,14 @@ while True:
 
   subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', offense.ai],shell=False)
 
-  with open('result1.txt') as res:
+  o_players = []
 
-    for line in res:
-      line.split(',')
-      offense.players[line[2]-1].set_position(line)
-      active_players.append(offense.players[line[2]-1])
+  with open('result.txt') as res:
+
+    for l in res:
+      line = l.split(',')
+      offense.players[int(line[2])-1].set_position(line)
+      o_players.append(offense.players[int(line[2])-1])
 
   with open('state2.txt','w') as stwo:
     stwo.write("DECLARE DEFENSE\n\n")
@@ -129,24 +132,62 @@ while True:
 
   subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', defense.ai],shell=False)
 
-  with open('result2.txt') as res:
-    for line in res:
-      line.split(',')
-      defense.players[line[2]-1].set_position(line)
-      active_players.append(defense.players[line[2]-1])
+  d_players = []
+  
+  with open('result.txt') as res:
+    for l in res:
+      line = l.split(',')
+      defense.players[int(line[2])-1].set_position(line)
+      d_players.append(defense.players[int(line[2])-1])
 
-  while gs.field.ball_in_play:
-    with open('state3.txt','w') as sth:
+  # ------------- During Play --------------
+
+  #while gs.field.ball_in_play:
+  for p in range(100, 200):
+    with open('state'+str(p)+'.txt','w') as sth:
+      sth.write("MOVE OFFENSE\n\n")
+      for opl in o_players:
+        sth.write(opl.get_stat_with_pos_csv()+"\n")
+      sth.write("\n")
+      for dpl in d_players:
+        sth.write(dpl.get_position_csv()+"\n")
+      sth.write("\nBALL,"+ gs.field.ball.get_status()+"\n")
+      footer(sth, gs, offense, defense)
+
+    subprocess.call(['lua5.3', 'run_ai.lua', 'state'+str(p)+'.txt', offense.ai],shell=False)
+
+    with open('result.txt') as res:
+      for l in res:
+        line = l.split(",")
+        if line[0] == "MOVE":
+          if (offense.side == 'home'):
+            f_dir = 1
+          else:
+            f_dir = -1
+          offense.players[int(line[1])-1].move(line[2][0], f_dir)
+
+    with open('state4.txt','w') as sth:
       sth.write("MOVE DEFENSE\n\n")
-      for i in range(11):
-        sth.write(active_players[i].get_stat_with_pos_csv()+"\n")
+      for opl in o_players:
+        sth.write(opl.get_position_csv()+"\n")
       sth.write("\n")
-      for j in range(11,22):
-        sth.write(active_players[j].get_pos_csv()+"\n")
-      sth.write("\n")
+      for dpl in d_players:
+        sth.write(dpl.get_stat_with_pos_csv()+"\n")
+      sth.write("\nBALL,"+ gs.field.ball.get_status()+"\n")
+      footer(sth, gs, offense, defense)
 
-    gs.field.ball.get_status()
+    subprocess.call(['lua5.3', 'run_ai.lua', 'state'+str(p)+'.txt', defense.ai],shell=False)
 
+    with open('result.txt') as res:
+      for l in res:
+        line = l.split(",")
+        if line[0] == "MOVE":
+          if (offense.side == 'home'):
+            f_dir = 1
+          else:
+            f_dir = -1
+
+          offense.players[int(line[1])-1].move(line[2][0], f_dir)
 
 
   gs.update('')

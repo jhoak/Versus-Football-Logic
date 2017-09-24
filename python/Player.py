@@ -5,13 +5,13 @@ class Player:
     self.side = home_or_away
     self.name = stats[0]
     self.number = stats[1]
-    self.speed = stats[2]*10
+    self.speed = int(stats[2])*10
     self.hit = stats[3]
     self.kicking = stats[4]
     self.disipline = stats[5]
     self.recieving = stats[6]
     self.passing = stats[7]
-    self.stats = stats
+    self.stats = stats[:-1]
 
     # Coordinates
     self.x = 0.0
@@ -23,24 +23,25 @@ class Player:
     self.collidable = True
     self.can_catch = False
 
-  def move(self, dir):
-    if 'N' in dir:
-      self.y += speed
-    if 'S' in dir:
-      self.y += speed
-    if 'F' in dir:
-      self.x += speed
-    if 'B' in dir:
-      self.x -= speed
+  def move(self, dirc, mod):
+    mag = self.speed*mod
+    if 'N' in dirc:
+      self.y += mag
+    if 'S' in dirc:
+      self.y += mag
+    if 'F' in dirc:
+      self.x += int(mag)
+    if 'B' in dirc:
+      self.x -= mag
 
-  def dive(self, dir):
-    if 'N' in dir:
-      self.y += 
-    if 'S' in dir:
+  def dive(self, dirc):
+    if 'N' in dirc:
       self.y += 1.0
-    if 'F' in dir:
+    if 'S' in dirc:
+      self.y += 1.0
+    if 'F' in dirc:
       self.x += 1.0
-    if 'B' in dir:
+    if 'B' in dirc:
       self.x -= 1.0
 
   def set_position(self, pos_data):
@@ -48,35 +49,36 @@ class Player:
     self.can_catch = False
 
     pos = pos_data[1]
-    if pos_data[3] > -500:
-      pos_data[3] = -500
+    if len(pos_data) > 3:
+      if int(pos_data[3]) > -500:
+        pos_data[3] = -500
 
-    if pos is 'C':
+    if pos == 'C':
       self.x = -500
       self.y = 0.0
 
-    elif pos is 'RG':
+    elif pos == 'RG':
       self.x = -500
       self.y = -1000
 
-    elif pos is 'RT':
+    elif pos == 'RT':
       self.x = -500
       self.y = -2000
 
-    elif pos is 'LG':
+    elif pos == 'LG':
       self.x = -500
       self.y = 1000
 
-    elif pos is 'LT':
+    elif pos == 'LT':
       self.x = -500
       self.y = 2000
 
-    elif pos is 'R' or pos is 'D':
-      self.x = pos_data[3]
-      self.y = pos_data[4]
+    elif ((pos == 'R') or (pos == 'D')):
+      self.x = int(pos_data[3])
+      self.y = int(pos_data[4])
 
-    elif pos is 'QB'
-      self.x = pos_data[3]
+    elif pos == 'QB':
+      self.x = int(pos_data[3])
       self.y = 0
 
   def throw(self, target_x, target_y, lob):
@@ -100,8 +102,8 @@ class Player:
       csv += str(stat)
       csv += ","
 
-    csv += str(self.x) + ","
-    csv += str(self.y)
+    csv += str(int(self.x)) + ","
+    csv += str(int(self.y))
 
     return csv
 
@@ -109,7 +111,7 @@ class Player:
     csv = ""
     csv += str(self.stats[0]) + ","
     csv += str(self.stats[1]) + ","
-    csv += str(self.x) + ","
-    csv += str(self.y)
+    csv += str(int(self.x)) + ","
+    csv += str(int(self.y))
 
     return csv
