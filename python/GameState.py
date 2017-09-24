@@ -62,19 +62,33 @@ class GameState:
     return str(100-self.yardline)
 
   def get_ticks_left(self):
-    return str(self.ticks_left)
+    return str(int(self.ticks_left))
 
   def get_half(self):
     return str(self.half)
 
+  def get_offernse(self)
+    if hometeam.hasball:
+      return hometeam
+    return awayteam
+
+  def get_defense_roster(self)
+    if hometeam.hasball:
+      return 'roster2.txt'
+    return 'roster1.txt'
+
+#--------------------------------------------------
 
 gs = GameState(300.0, 0.1)
+ai_1 = 'dumb'
+ai_2 = 'dumb'
 
 while True:
 
+
   with open('state1.txt','w') as sone:
     sone.write("DECLARE OFFENSE\n\n")
-    with open('roster1.txt') as rone:
+    with open(gs.get_offense_roster()) as rone:
       for line in rone:
         sone.write(line)
     sone.write("\n")
@@ -84,9 +98,17 @@ while True:
     sone.write(gs.get_ticks_left()+",TICK\n")
     sone.write(gs.get_half()+",HALF\n")
 
+  subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', ai_1],shell=False)
+
+  with open('result.txt') as res:
+    for line in res:
+      line.split(',')
+      gs.line[2]
+
+
   with open('state2.txt','w') as stwo:
     stwo.write("DECLARE DEFENSE\n\n")
-    with open('roster2.txt') as rtwo:
+    with open(gs.get_defense_roster()) as rtwo:
       for line in rtwo:
         stwo.write(line)
     stwo.write("\n")
@@ -96,8 +118,11 @@ while True:
     stwo.write(gs.get_ticks_left()+",TICK\n")
     stwo.write(gs.get_half()+",HALF\n")
 
-  subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', 'dumb'],shell=False)
-  subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', 'dumb'],shell=False)
+  subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', ai_2],shell=False)
+
+  with open('result.txt') as res:
+    for line in res:
+      line.split(',')
 
 
   gs.update('')

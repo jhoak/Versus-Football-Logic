@@ -13,38 +13,38 @@ import math
 # Uses a Naive Algorithm. I can make this faster by pruning distant players.
 def collide(coord,other_coords,delta):
 
-	# Helpers
-	def sign(x):
-		if x == 0:
-			return 0
-		if x < 0:
-			return -1
-		if x > 0:
-			return 1
+  # Helpers
+  def sign(x):
+    if x == 0:
+      return 0
+    if x < 0:
+      return -1
+    if x > 0:
+      return 1
 
-	def did_collide(a,b):
-		# If the center points are both within 1000 you collided.
-		x_collide = abs(a[0] - b[0]) <= 1000
-		y_collide = abs(a[1] - b[1]) <= 1000
-		return x_collide and y_collide
+  def did_collide(a,b):
+    # If the center points are both within 1000 you collided.
+    x_collide = abs(a[0] - b[0]) <= 1000
+    y_collide = abs(a[1] - b[1]) <= 1000
+    return x_collide and y_collide
 
 
-	# How many steps? Also, how far to go?
-	step_delta = [sign(delta[0]),sign(delta[1])]
-	steps = max([abs(delta[0]),abs(delta[1])])
+  # How many steps? Also, how far to go?
+  step_delta = [sign(delta[0]),sign(delta[1])]
+  steps = max([abs(delta[0]),abs(delta[1])])
 
-	for i in range(steps):
-		coord = [coord[0] + step_delta[0],coord[1] + step_delta[1]]
-		for idx, other_coord in enumerate(other_coords):
-			if did_collide(coord,other_coord):
-				# Undo step
-				coord = [coord[0] - step_delta[0],coord[1] - step_delta[1]]
-				# Calculate collision angle
-				angle = math.degrees(math.atan2(other_coord[1] - coord[1], other_coord[0] - coord[0]))
-				# return index
-				return [coord,[idx,angle]]
+  for i in range(steps):
+    coord = [coord[0] + step_delta[0],coord[1] + step_delta[1]]
+    for idx, other_coord in enumerate(other_coords):
+      if did_collide(coord,other_coord):
+        # Undo step
+        coord = [coord[0] - step_delta[0],coord[1] - step_delta[1]]
+        # Calculate collision angle
+        angle = math.degrees(math.atan2(other_coord[1] - coord[1], other_coord[0] - coord[0]))
+        # return index
+        return [coord,[idx,angle]]
 
-	return [coord,None]
+  return [coord,None]
 
 
 # collide by running upward (90 degrees)
