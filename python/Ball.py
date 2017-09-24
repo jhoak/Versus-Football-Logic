@@ -52,11 +52,9 @@ class Ball:
   def update(self, o_players, d_players):
 
     if self.held:
-      if self.held.
-      if self.held.disabletimer > 0:
-        self.in_play = True
-
-    return held.x
+      if self.held.disabletime > 0:
+        self.in_play = False
+        return held.x
 
 
     if not self.held:

@@ -115,7 +115,7 @@ class Player:
 
   def disable(self, time, stre):
     random.randint(0,100)
-    if abs(self.hit-stre) > random.randint(0,100):
+    if abs(int(self.hit)-int(stre)) > random.randint(0,100):
       self.disabletime = 3
 
   def get_stat_with_pos_csv(self):
