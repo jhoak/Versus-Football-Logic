@@ -25,7 +25,7 @@ class Ball:
       pass
     x += x_speed
 
-  def player_hold(self, player)
+  def player_hold(self, player):
     self.held = player
     self.x = player.x
     self.y = player.y

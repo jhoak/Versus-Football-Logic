@@ -1,35 +1,46 @@
 MOVE DEFENSE
 
-Domisquith Bartolimeo,1,500,500
-Domisquith Bartolimeo,2,1500,500
-Domisquith Bartolimeo,3,2500,500
-Domisquith Bartolimeo,4,3500,500
-Domisquith Bartolimeo,5,4500,500
-Domisquith Bartolimeo,6,5500,500
-Domisquith Bartolimeo,7,6500,500
-Domisquith Bartolimeo,8,7500,500
-Domisquith Bartolimeo,9,8500,500
-Domisquith Bartolimeo,10,9500,500
-Domisquith Bartolimeo,11,10500,500
+Domisquith Bartolimeo,16,0.0,0.0
+Domisquith Bartolimeo,17,0.0,0.0
+Domisquith Bartolimeo,18,0.0,0.0
+Domisquith Bartolimeo,19,-500,3000
+Domisquith Bartolimeo,20,-500,4000
+Domisquith Bartolimeo,21,-500,7000
+Domisquith Bartolimeo,22,-500,-3000
+Domisquith Bartolimeo,23,-500,-4000
+Domisquith Bartolimeo,24,0.0,0.0
+Domisquith Bartolimeo,14,-500,0.0
+Domisquith Bartolimeo,15,0.0,0.0
 
-Domisquith Bartolimeo,1,100,100,100,100,100,100,500,-500
-Domisquith Bartolimeo,2,100,100,100,100,100,100,1500,-500
-Domisquith Bartolimeo,3,100,100,100,100,100,100,2500,-500
-Domisquith Bartolimeo,4,100,100,100,100,100,100,3500,-500
-Domisquith Bartolimeo,5,100,100,100,100,100,100,4500,-500
-Domisquith Bartolimeo,6,100,100,100,100,100,100,5500,-500
-Domisquith Bartolimeo,7,100,100,100,100,100,100,6500,-500
-Domisquith Bartolimeo,8,100,100,100,100,100,100,7500,-500
-Domisquith Bartolimeo,9,100,100,100,100,100,100,8500,-500
-Domisquith Bartolimeo,10,100,100,100,100,100,100,9500,-500
-Domisquith Bartolimeo,11,100,100,100,100,100,100,1000,-500
+Domisquith Bartolimeo,1,100,100,100,100,100,100
+,-500,5000
+Domisquith Bartolimeo,2,100,100,100,100,100,100
+,-500,4000
+Domisquith Bartolimeo,3,100,100,100,100,100,100
+,-500,3000
+Domisquith Bartolimeo,4,100,100,100,100,100,100
+,-500,2000
+Domisquith Bartolimeo,5,100,100,100,100,100,100
+,-500,1000
+Domisquith Bartolimeo,6,100,100,100,100,100,100
+,-500,0
+Domisquith Bartolimeo,7,100,100,100,100,100,100
+,-500,-1000
+Domisquith Bartolimeo,8,100,100,100,100,100,100
+,-500,-2000
+Domisquith Bartolimeo,9,100,100,100,100,100,100
+,-500,-3000
+Domisquith Bartolimeo,10,100,100,100,100,100,100
+,-500,-4000
+Domisquith Bartolimeo,11,100,100,100,100,100,100
+,-500,-5000
 
-BALL {TEAM(O or D)_AND_PLAYERNUMBER, OR location vector (x,y,z)}
+BALL,(0, 0, 0),(0, 0, 0)
 
-2,DOWN
-3,TOGO
-37,TOTD
-3452,TICK
+1,DOWN
+10,TOGO
+80,TOTD
+3000,TICK
 1,HALF
-7,OFFENSE_SCORE
-2,DEFENSE_SCORE
+0,OFFENSIVE_SCORE
+0,DEFENSIVE_SCORE

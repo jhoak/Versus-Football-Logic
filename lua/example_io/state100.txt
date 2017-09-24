@@ -1,0 +1,46 @@
+MOVE OFFENSE
+
+Domisquith Bartolimeo,16,100,100,100,100,100,100
+,0.0,0.0
+Domisquith Bartolimeo,17,100,100,100,100,100,100
+,0.0,0.0
+Domisquith Bartolimeo,18,100,100,100,100,100,100
+,0.0,0.0
+Domisquith Bartolimeo,19,100,100,100,100,100,100
+,-500,3000
+Domisquith Bartolimeo,20,100,100,100,100,100,100
+,-500,4000
+Domisquith Bartolimeo,21,100,100,100,100,100,100
+,-500,7000
+Domisquith Bartolimeo,22,100,100,100,100,100,100
+,-500,-3000
+Domisquith Bartolimeo,23,100,100,100,100,100,100
+,-500,-4000
+Domisquith Bartolimeo,24,100,100,100,100,100,100
+,0.0,0.0
+Domisquith Bartolimeo,14,100,100,100,100,100,100
+,-500,0.0
+Domisquith Bartolimeo,15,100,100,100,100,100,100
+,0.0,0.0
+
+Domisquith Bartolimeo,1,-500,5000
+Domisquith Bartolimeo,2,-500,4000
+Domisquith Bartolimeo,3,-500,3000
+Domisquith Bartolimeo,4,-500,2000
+Domisquith Bartolimeo,5,-500,1000
+Domisquith Bartolimeo,6,-500,0
+Domisquith Bartolimeo,7,-500,-1000
+Domisquith Bartolimeo,8,-500,-2000
+Domisquith Bartolimeo,9,-500,-3000
+Domisquith Bartolimeo,10,-500,-4000
+Domisquith Bartolimeo,11,-500,-5000
+
+BALL,(0, 0, 0),(0, 0, 0)
+
+1,DOWN
+10,TOGO
+80,TOTD
+3000,TICK
+1,HALF
+0,OFFENSIVE_SCORE
+0,DEFENSIVE_SCORE
