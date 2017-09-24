@@ -18,6 +18,7 @@ class GameState:
     self.down = 1
     self.to_go = 10
     self.yardline = 20
+    self.ball_in_play = False
     self.gameover = False
 
   def update(self):
@@ -66,10 +67,11 @@ class GameState:
         defense.players[int(line[2])-1].set_position(line)
         d_players.append(defense.players[int(line[2])-1])
 
+    self.ball_in_play = True
     # ------------- During Play --------------
     # Offense State
     p = 99
-    while self.field.ball_in_play:
+    while self.ball_in_play:
       p+=1
       with open('state'+str(p)+'.txt','w') as sth:
         sth.write("MOVE OFFENSE\n\n")
@@ -142,7 +144,7 @@ class GameState:
     f_dir = self.get_direction()
 
     if act[0] == "MOVE":
-      defense.players[int(line[1])-1].move(line[2][0], f_dir)
+      defense.players[int(act[1])-1].move(act[2][0], f_dir)
     elif act[0] == "THROW":
       held = self.field.ball.held
       if self.field.ball.held:
@@ -171,22 +173,22 @@ class GameState:
   def get_defense(self):
     if self.hometeam.hasball:
       return self.awayteam
-    return self.hometeam-
+    return self.hometeam
 
-  def footer(file, offense, defense):    
+  def footer(self, file, offense, defense):    
     file.write("\n")
     file.write(str(self.down)+",DOWN\n")
     file.write(str(self.to_go)+",TOGO\n")
-    file.write(str(self.to_td)+",TOTD\n")
-    file.write(str(self.ticks_left)+",TICK\n")
+    file.write(str(100-self.yardline)+",TOTD\n")
+    file.write(str(int(self.ticks_left))+",TICK\n")
     file.write(str(self.half)+",HALF\n")
     file.write(str(offense.score)+",OFFENSIVE_SCORE\n")
     file.write(str(defense.score)+",DEFENSIVE_SCORE")
 
 #-------------------------------------------------------
 
-home = Team("Patrick", "home", 'example_io/roster1.txt', 'dumb')
-away = Team("xXx_TeAm_NaMe_xXx", "away", 'example_io/roster1.txt', 'dumb')
+home = Team("Patrick", "home", 'example_io/roster1.txt', '../team/patrick')
+away = Team("xXx_TeAm_NaMe_xXx", "away", 'example_io/roster1.txt', '../team/dumb')
 
 gs = GameState(home, away, 300.0, 0.1)
 
