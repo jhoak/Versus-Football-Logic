@@ -10,6 +10,7 @@ class Ball:
   held = False
   # Passed
   passed = False
+  side = ""
 
   gravity = 10.72835
 
@@ -45,14 +46,14 @@ class Ball:
       for pl in o_players:
         if pl.can_catch:
           if self.check_if_near(pl.x, pl.y):
-            self.player_hold(pl)
+            self.player_hold(pl, "o")
             break
 
       if not self.held:
         for pl in d_players:
           if pl.can_catch:
             if self.check_if_near(pl.x, pl.y):
-              self.player_hold(pl)
+              self.player_hold(pl, "d")
               break
 
       self.x += self.x_speed
@@ -71,15 +72,16 @@ class Ball:
     return x_collide and y_collide
 
 
-  def player_hold(self, player):
+  def player_hold(self, player, side):
     self.held = player
+    self.side = side
     self.x = player.x
     self.y = player.y
     self.z = 1.5
 
   def get_status(self):
     if self.held:
-      return self.held.side + str(self.held.number)
+      return self.side + str(self.held.number)
     else:
       t_p = str(int(self.x)) + "," + str(int(self.y)) + "," + str(int(self.z))
       t_v = str(int(self.x_speed)) + "," + str(int(self.y_speed)) + "," + str(int(self.z_speed))
