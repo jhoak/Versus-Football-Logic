@@ -98,6 +98,7 @@ class Player:
 
     elif pos == 'QB':
       self.can_catch = True
+      print(int(pos_data[3]))
       self.x = int(pos_data[3])
       self.y = 0
 

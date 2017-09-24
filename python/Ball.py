@@ -81,7 +81,7 @@ class Ball:
 
   def get_status(self):
     if self.held:
-      return self.side + str(self.held.number)
+      return self.side + "," + str(self.held.number)
     else:
       t_p = str(int(self.x)) + "," + str(int(self.y)) + "," + str(int(self.z))
       t_v = str(int(self.x_speed)) + "," + str(int(self.y_speed)) + "," + str(int(self.z_speed))
