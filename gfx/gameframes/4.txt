@@ -1,0 +1,35 @@
+MOVE OFFENSE
+
+Domisquith Bartolimeo,1,100,100,100,100,100,100,-500,0
+Domisquith Bartolimeo,2,100,100,100,100,100,100,-500,1000
+Domisquith Bartolimeo,3,100,100,100,100,100,100,-500,2000
+Domisquith Bartolimeo,4,100,100,100,100,100,100,-500,3000
+Domisquith Bartolimeo,5,100,100,100,100,100,100,-500,4000
+Domisquith Bartolimeo,6,100,100,100,100,100,100,-500,-1000
+Domisquith Bartolimeo,7,100,100,100,100,100,100,-500,-2000
+Domisquith Bartolimeo,8,100,100,100,100,100,100,-500,-3000
+Domisquith Bartolimeo,9,100,100,100,100,100,100,-500,-4000
+Domisquith Bartolimeo,10,100,100,100,100,100,100,-500,-5000
+Domisquith Bartolimeo,11,100,100,100,100,100,100,-500,-6000
+
+Domisquith Bartolimeo,1,500,0
+Domisquith Bartolimeo,2,500,1000
+Domisquith Bartolimeo,3,500,2000
+Domisquith Bartolimeo,4,500,3000
+Domisquith Bartolimeo,5,500,4000
+Domisquith Bartolimeo,6,500,-1000
+Domisquith Bartolimeo,7,500,-2000
+Domisquith Bartolimeo,8,500,-3000
+Domisquith Bartolimeo,9,500,-4000
+Domisquith Bartolimeo,10,500,-5000
+Domisquith Bartolimeo,11,500,-6000
+
+BALL {TEAM(O or D)_AND_PLAYERNUMBER, OR location vector (x,y,z)}
+
+2,DOWN
+3,TOGO
+37,TOTD
+3152,TICK
+1,HALF
+7,OFFENSE_SCORE
+2,DEFENSE_SCORE
