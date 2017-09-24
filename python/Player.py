@@ -17,11 +17,23 @@ class Player:
     self.y = 0.0
 
     # Flags!
-    self.divestate = False
+    self.down = False
+    self.diving = True
+    self.collidable = True
 
   def move(self, dir):
     if 'N' in dir:
-      self.y += 1.0
+      self.y += speed
+    if 'S' in dir:
+      self.y += speed
+    if 'F' in dir:
+      self.x += speed
+    if 'B' in dir:
+      self.x -= speed
+
+  def dive(self, dir):
+    if 'N' in dir:
+      self.y += 
     if 'S' in dir:
       self.y += 1.0
     if 'F' in dir:
@@ -29,15 +41,8 @@ class Player:
     if 'B' in dir:
       self.x -= 1.0
 
-  def dive(self, dir):
-    if 'N' in dir:
-      self.y += 1.0
-    if 'S' in dir:
-      self.y += 1.0
-    if 'F' in dir:
-      self.x += 1.0
-    if 'B' in dir:
-      self.x -= 1.0
+  def set_position(self, x, y):
+    pass
 
   def throw(self, target_x, target_y, lob):
     if not has_ball:
