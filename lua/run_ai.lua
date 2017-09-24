@@ -27,6 +27,9 @@ function save_results()
       io.write("MOVE,", key, ",", value[2], "\n")
     end
   end
+  -- Save memory string.
+  file = io.open(arg[2] .. "/memory", "w")
+  file:write(env.memory)
 end
 
 function ai_timer()
@@ -36,21 +39,53 @@ function ai_timer()
     os.exit()
   end;
 end
+
+function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
+function read_all(file)
+  local f = io.open(file, "rb")
+  local content = f:read("*all")
+  f:close()
+  return content
+end
+
 -- Pass state as arg1 and pass team folder as arg 2
 function run_ai()
 
 -- Load gamestate
   local game_state_l = state.readstate(arg[1])
 
+
+
+-- Load Memory from Disk. AI user can do whatever with it. Limit to string for now.
+
+  mem_path = arg[2] .. "/memory"
+
+  if(file_exists(mem_path)) then
+    memory = read_all(mem_path)
+  else
+    memory = ""
+  end
+
 -- Init Env
   local passtable = {}
+  local strtable = {}
+
   passtable["insert"] = table.insert
+  strtable["gmatch"] = string.gmatch
+
   env = {
     print = print,
     pairs = pairs,
     table = passtable,
+    string = strtable,
     game_state = game_state_l,
-    commands = {}
+    commands = {},
+    tostring = tostring,
+    memory = memory
   }
 
 -- Compile Code

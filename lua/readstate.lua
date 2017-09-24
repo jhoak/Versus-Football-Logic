@@ -66,8 +66,11 @@ end
 local function read_ball()
   local ball = split(io.read("*line")," ")
   io.read("*line")
-  if #ball == 2 then
-    return tonumber(ball[2])
+  if #ball == 3 then
+    ball_carrier = {}
+    ball_carrier[1] = ball[2]
+    ball_carrier[2] = tonumber(ball[3])
+    return ball_carrier
   else
     local vector = {}
     vector["x"] = tonumber(ball[2])
