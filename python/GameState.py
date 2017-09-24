@@ -157,7 +157,7 @@ class GameState:
     elif act[0] == "PASS":
       held = self.ball.held
       if self.ball.held:
-        self.ball.held.player_hold()
+        self.ball.player_hold(self.ball.held, self.ball.side)
         self.ball.throw(act[1], act[2])
 
 
