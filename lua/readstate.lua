@@ -41,6 +41,8 @@ local function game_state()
   game["totd"] = tonumber(split(io.read("*line"), ",")[1])
   game["tick"] = tonumber(split(io.read("*line"), ",")[1])
   game["half"] = tonumber(split(io.read("*line"), ",")[1])
+  game["offense_score"] = tonumber(split(io.read("*line"), ",")[1])
+  game["defense_score"] = tonumber(split(io.read("*line"), ",")[1])
   return game
 end
 
