@@ -57,7 +57,7 @@ class Ball:
     if self.held:
       if self.held.disabletime > 0:
         self.in_play = False
-        return held.x
+        return self.held.x
 
 
     if not self.held:
