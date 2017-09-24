@@ -59,6 +59,8 @@ class Ball:
         self.in_play = False
         return self.held.x
 
+      return False
+
 
     if not self.held:
 
