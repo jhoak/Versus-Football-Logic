@@ -65,9 +65,9 @@ class Ball:
 
 
 
-  def check_if_near(x, y):    
-    x_collide = abs(a[0] - b[0]) <= 500
-    y_collide = abs(a[1] - b[1]) <= 500
+  def check_if_near(self, x, y):    
+    x_collide = abs(x - self.x) <= 500
+    y_collide = abs(y - self.y) <= 500
     return x_collide and y_collide
 
 

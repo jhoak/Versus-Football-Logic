@@ -22,7 +22,7 @@ class GameState:
     self.ball_in_play = False
     self.gameover = False
 
-    self.ball = Ball
+    self.ball = Ball()
 
   def update(self):
     # ----------- Pre-Snap ---------------
@@ -30,7 +30,7 @@ class GameState:
     offense = self.get_offense()
     defense = self.get_defense()
 
-    with open('state1.txt','w') as sone:
+    with open('vid/state1.txt','w') as sone:
       sone.write("DECLARE OFFENSE\n\n")
       with open(offense.roster) as rone:
         for line in rone:
@@ -38,7 +38,7 @@ class GameState:
       sone.write("\n")
       self.footer(sone, offense, defense)
 
-    subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', offense.ai],shell=False)
+    subprocess.call(['lua5.3', 'run_ai.lua', 'vid/state1.txt', offense.ai],shell=False)
 
     o_players = []
 
@@ -49,7 +49,7 @@ class GameState:
         offense.players[int(line[2])-1].set_position(line)
         o_players.append(offense.players[int(line[2])-1])
 
-    with open('state2.txt','w') as stwo:
+    with open('vid/state2.txt','w') as stwo:
       stwo.write("DECLARE DEFENSE\n\n")
       for pl in o_players:
         stwo.write(pl.get_position_csv()+"\n")
@@ -60,7 +60,7 @@ class GameState:
       stwo.write("\n")
       self.footer(stwo, offense, defense)
 
-    subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', defense.ai],shell=False)
+    subprocess.call(['lua5.3', 'run_ai.lua', 'vid/state2.txt', defense.ai],shell=False)
 
     d_players = []
     
@@ -71,7 +71,7 @@ class GameState:
         d_players.append(defense.players[int(line[2])-1])
 
     self.ball_in_play = True
-    self.ball.set_position(0,0,.1)
+    self.ball.set_position(0, 0, 0.1)
     self.ball.snap(1)
     # ------------- During Play --------------
     # Offense State
@@ -88,14 +88,14 @@ class GameState:
         sth.write("\nBALL,"+ self.ball.get_status()+"\n")
         self.footer(sth, offense, defense)
 
-      subprocess.call(['lua5.3', 'run_ai.lua', 'state'+str(p)+'.txt', offense.ai],shell=False)
+      subprocess.call(['lua5.3', 'run_ai.lua', 'vid/state'+str(p)+'.txt', offense.ai],shell=False)
 
       with open('result.txt') as res:
         for l in res:
           line = l.split(",")
           self.action(line[0], 'off', offense, defense)
 
-      with open('state4.txt','w') as sth:
+      with open('vid/state4.txt','w') as sth:
         sth.write("MOVE DEFENSE\n\n")
         for opl in o_players:
           sth.write(opl.get_position_csv()+"\n")
@@ -105,7 +105,7 @@ class GameState:
         sth.write("\nBALL,"+ self.ball.get_status()+"\n")
         self.footer(sth, offense, defense)
 
-      subprocess.call(['lua5.3', 'run_ai.lua', 'state4.txt', defense.ai],shell=False)
+      subprocess.call(['lua5.3', 'run_ai.lua', 'vid/state4.txt', defense.ai],shell=False)
 
       with open('result.txt') as res:
         for l in res:
