@@ -1,6 +1,6 @@
 -- The dumb ai (tm)--
 
-if game_state["status"] == "DECLARE OFFENSE" or game_state["status"] == "DECLARE DEFENSE" then
+if game_state["status"] == "DECLARE OFFENSE" then
 
   players = {}
 
@@ -23,7 +23,33 @@ if game_state["status"] == "DECLARE OFFENSE" or game_state["status"] == "DECLARE
   commands[players[9]] = {"R",-500,-3000}
   commands[players[10]] = {"R",-500,-4000}
   commands[players[11]] = {"QB", 5000}
-else
+end
+
+if game_state["status"] == "DECLARE DEFENSE" then
+  players = {}
+
+  -- Pick players from roster randomly 
+  for key,value in pairs(game_state["players"]) do
+    table.insert(players,value["number"])
+    if #table == 11 then
+      break
+    end
+  end
+
+  commands[players[1]] = {"D",-500,5000}
+  commands[players[2]] = {"D",-500,4000}
+  commands[players[3]] = {"D",-500,3000}
+  commands[players[4]] = {"D",-500,2000}
+  commands[players[5]] = {"D",-500,1000}
+  commands[players[6]] = {"D",-500,0000}
+  commands[players[7]] = {"D",-500,-1000}
+  commands[players[8]] = {"D",-500,-2000}
+  commands[players[9]] = {"D",-500,-3000}
+  commands[players[10]] = {"D",-500,-4000}
+  commands[players[11]] = {"D",-500,-5000}
+end
+
+if game_state["status"] == "MOVE DEFENSE" or game_state["status"] == "MOVE OFFENSE" then
   for key,value in pairs(game_state["players"]) do
     commands[value["number"]] = {"MOVE","F"} 
   end

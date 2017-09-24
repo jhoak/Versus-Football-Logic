@@ -12,15 +12,17 @@ function save_results()
     if(value[1] == "C" or value[1] == "LG" or value[1] == "RG" or value[1] == "LT" or value[1] == "RT") then
       io.write("SET,", value[1], ",", key, "\n")
     end
-    -- Receiver set commands
-    if(value[1] == "R") then
-      io.write("SET,R,",key, ",", value[2], ",", value[3], "\n")
+    -- Receiver set commands (same as D)
+    if(value[1] == "R") or (value[1] == "D") then
+      io.write("SET,",value[1],",",key, ",", value[2], ",", value[3], "\n")
     end
 
     --QB set command
     if(value[1] == "QB") then
       io.write("SET,QB,", key, ",", value[2], "\n")
     end
+
+
   end
 end
 
