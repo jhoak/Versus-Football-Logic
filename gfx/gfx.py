@@ -4,7 +4,7 @@ from os.path import isfile, join
 
 # quick and dirty gameplay display
 def read_offense_file(i):
-	fname = "/opt/vf/gfx/gameframes/" + str(i) +".txt"
+	fname = "/opt/vf/gfx/gameframes/state" + str(100+i) +".txt"
 	if not isfile(fname):
 		return False 
 
