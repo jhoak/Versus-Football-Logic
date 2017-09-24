@@ -164,9 +164,9 @@ class GameState:
   def get_direction(self, side):
     #TODO: Conditions
     if side == 'off':
-      return 1
-    else:
       return -1
+    else:
+      return 1
 
   def halftime(self):
     self.half = 2
