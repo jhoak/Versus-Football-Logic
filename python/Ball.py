@@ -17,7 +17,7 @@ class Ball:
     pass
 
 
-  def set_pos(self, x, y, z):
+  def set_position(self, x, y, z):
     self.x = x
     self.y = y
     self.z = z
@@ -32,12 +32,14 @@ class Ball:
     dist = math.sqrt(math.pow(x-self.x, 2)+math.pow(y-self.y, 2))
     vel = math.sqrt(dist/self.gravity) * self.gravity
     self.z_speed = (math.sqrt(2)*vel)/2
-    self.x_speed = ((math.sqrt(2)*vel)/2) * math.atan(math.abs(y-self.y)/math.abs(x-self.x))
+    self.x_speed = ((math.sqrt(2)*vel)/2) * math.atan(abs(y-self.y)/abs(x-self.x))
     self.y_speed = self.z_speed-self.x_speed
 
+  def snap(self):
+    self.throw(-7000, 0)
 
   def update(self):
-    if not held:
+    if not self.held:
       self.x += self.x_speed
       self.y += self.y_speed
       self.z += self.z_speed
@@ -56,6 +58,6 @@ class Ball:
     if self.held:
       return self.held.side + str(self.held.number)
     else:
-      t_p = str(self.x) + "," + str(self.y) + "," + str(self.z)
-      t_v = str(self.y_speed) + "," + str(self.y_speed) + "," + str(self.y_speed)
+      t_p = str(int(self.x)) + "," + str(int(self.y)) + "," + str(int(self.z))
+      t_v = str(int(self.x_speed)) + "," + str(int(self.y_speed)) + "," + str(int(self.z_speed))
       return str(t_p) + "," + str(t_v)

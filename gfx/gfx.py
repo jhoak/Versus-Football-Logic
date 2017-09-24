@@ -4,7 +4,7 @@ from os.path import isfile, join
 
 # quick and dirty gameplay display
 def read_offense_file(i):
-	fname = "/opt/vf/gfx/gameframes/state" + str(100+i) +".txt"
+	fname = "gameframes/state" + str(100+i) +".txt"
 	if not isfile(fname):
 		return False 
 
@@ -76,7 +76,7 @@ def to_movie():
 
 		draw.text((10,90), "Time:" + str(int(f["tick"] / (600))) + ":" + str(int((f["tick"] % 600)/10)), font=fnt, fill=(0,0,0,255))
 
-		frame.save('/opt/vf/gfx/tmp/' + str(i).zfill(5) + '.png')
+		frame.save('tmp/' + str(i).zfill(5) + '.png')
 		i += 1
 
 	system('ffmpeg -f image2 -r 10 -i tmp/%05d.png -vcodec mpeg4 -y movie.mp4')

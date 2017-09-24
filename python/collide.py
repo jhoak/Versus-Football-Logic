@@ -11,7 +11,7 @@ import math
 
 # PROBLEMS:
 # Uses a Naive Algorithm. I can make this faster by pruning distant players.
-def collide(coord,other_coords,delta):
+def collide(self, coord,other_coords,delta):
 
   # Helpers
   def sign(x):

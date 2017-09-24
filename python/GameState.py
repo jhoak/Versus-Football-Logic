@@ -32,8 +32,8 @@ class GameState:
       with open(offense.roster) as rone:
         for line in rone:
           sone.write(line)
+      sone.write("\n")
       self.footer(sone, offense, defense)
-
 
     subprocess.call(['lua5.3', 'run_ai.lua', 'state1.txt', offense.ai],shell=False)
 
@@ -54,6 +54,7 @@ class GameState:
       with open(defense.roster) as rtwo:
         for line in rtwo:
           stwo.write(line)
+      stwo.write("\n")
       self.footer(stwo, offense, defense)
 
     subprocess.call(['lua5.3', 'run_ai.lua', 'state2.txt', defense.ai],shell=False)
@@ -67,7 +68,8 @@ class GameState:
         d_players.append(defense.players[int(line[2])-1])
 
     self.ball_in_play = True
-    self.field.ball.set_position
+    self.field.ball.set_position(0,0,.1)
+    self.field.ball.snap()
     # ------------- During Play --------------
     # Offense State
     p = 99
@@ -88,7 +90,7 @@ class GameState:
       with open('result.txt') as res:
         for l in res:
           line = l.split(",")
-          self.action(line[0], offense, defense)
+          self.action(line[0], 'off', offense, defense)
 
       with open('state4.txt','w') as sth:
         sth.write("MOVE DEFENSE\n\n")
@@ -105,11 +107,10 @@ class GameState:
       with open('result.txt') as res:
         for l in res:
           line = l.split(",")
-          self.action(line, offense, defense)
-
+          self.action(line, 'def', offense, defense)
 
       # Update the field
-      #self.field.update()
+      self.field.update()
 
       # Tick the Clock
       self.clock.update()

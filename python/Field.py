@@ -8,3 +8,5 @@ class Field:
     self.offense_players = o_players
     self.play_ongoing = False
 
+  def update(self):
+    self.ball.update()

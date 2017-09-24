@@ -27,19 +27,30 @@ class Player:
 
   def move(self, dirc, mod, opposite_team):
     mag = self.speed*mod
+    dmag = mag *(math.sqrt(2)/2)
     opposite_team_coords = []
+    if mod == 1:
+      print(dirc)
     for pl in opposite_team:
       opposite_team_coords.append((pl.x, pl.y))
-    if 'N' in dirc:
+    if dirc == 'N':
       co = self.collide((self.x, self.y),opposite_team_coords, (0,mag))
-    if 'S' in dirc:
+    elif dirc == 'S':
       co = self.collide((self.x, self.y),opposite_team_coords, (0,-1*mag))
-    if 'F' in dirc:
+    elif dirc == 'F':
       co = self.collide((self.x, self.y),opposite_team_coords, (mag,0))
-    if 'B' in dirc:
+    elif dirc == 'NF':
+      co = self.collide((self.x, self.y),opposite_team_coords, (dmag,dmag))
+    elif dirc == 'SF':
+      co = self.collide((self.x, self.y),opposite_team_coords, (dmag,-1*dmag))
+    elif dirc == 'B':
       co = self.collide((self.x, self.y),opposite_team_coords, (-1*mag,0))
+    elif dirc == 'NB':
+      co = self.collide((self.x, self.y),opposite_team_coords, (-1*dmag,dmag))
+    elif dirc == 'SB':
+      co = self.collide((self.x, self.y),opposite_team_coords, (-1*dmag,-1*dmag))
 
-    x, y = co[0]
+    self.x, self.y = co[0]
 
   def dive(self, dirc):
     if 'N' in dirc:
@@ -81,18 +92,14 @@ class Player:
       self.y = 2000
 
     elif ((pos == 'R') or (pos == 'D')):
+      self.can_catch = True
       self.x = int(pos_data[3])
       self.y = int(pos_data[4])
 
     elif pos == 'QB':
+      self.can_catch = True
       self.x = int(pos_data[3])
       self.y = 0
-
-  def throw(self, target_x, target_y, lob):
-    if not has_ball:
-      return
-    # TODO: Solve for arc
-    self.Ball.setvector(2, 2, 2)
 
   def get_stat_csv(self):
     csv = ""
@@ -134,7 +141,7 @@ class Player:
 
   # PROBLEMS:
   # Uses a Naive Algorithm. I can make this faster by pruning distant players.
-  def collide(coord,other_coords,delta):
+  def collide(self,coord,other_coords,delta):
 
     # Helpers
     def sign(x):
