@@ -21,6 +21,11 @@ def read_offense_file(i):
 	d["tick"] = int(lines[31].split(",")[0])
 	d["offense_score"] = lines[33].split(",")[0]
 	d["defense_score"] = lines[34].split(",")[0]
+
+	if(len(lines[26].split(",")) == 7):
+		d["ballvec"] = [int(lines[26].split(",")[1]), int(lines[26].split(",")[2])]
+	else:
+		d["ballplayer"] = [lines[26].split(",")[1], lines[26].split(",")[2]]
 	return d
 # Converts all offensive gamestate files in /gfx/tmp
 def to_movie():
@@ -43,6 +48,11 @@ def to_movie():
 		draw = ImageDraw.Draw(frame)
 		draw.line((center[0], 0, center[0], 200), fill="blue")
 		draw.line((fd, 0, fd, 200), fill="yellow")
+
+		if "ballvec" in f:
+			vec = f["ballvec"]
+			ball_pos = [int(vec[0]/100) + center[0] +-3, int(vec[1]/100) + center[1]+-3]
+			frame.paste(ball,ball_pos)
 
 		for player in range(11):
 			d_coord = f["d" +str(player+1)]
