@@ -32,7 +32,7 @@ class Ball:
 
   def throw(self, x, y):
     r=1
-    if int(x) < 0:
+    if int(x) < 0 and int(x)>=51:
       r = -1
     if r:
       x=int(x)
