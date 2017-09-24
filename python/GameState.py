@@ -154,7 +154,7 @@ class GameState:
         defense.players[int(act[1])-1].move(act[2][0], f_dir, offense.players)
       elif side == 'off':
         offense.players[int(act[1])-1].move(act[2][0], f_dir, defense.players)
-    elif act[0] == "THROW":
+    elif act[0] == "PASS":
       held = self.ball.held
       if self.ball.held:
         self.ball.held.player_hold()
