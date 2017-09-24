@@ -90,7 +90,7 @@ class Player:
   def get_stat_csv(self):
     csv = ""
     for stat in self.stats:
-      csv += str(stat)
+      csv += str(int(stat))
       csv += ","
 
     return csv[:-1]
@@ -99,7 +99,7 @@ class Player:
   def get_stat_with_pos_csv(self):
     csv = ""
     for stat in self.stats:
-      csv += str(stat)
+      csv += str(int(stat))
       csv += ","
 
     csv += str(int(self.x)) + ","
