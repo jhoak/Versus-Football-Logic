@@ -38,7 +38,7 @@ class Ball:
     else:
       acc = 0
     self.z_speed = ((math.sqrt(2)*vel)/2) * (1 + random.randint(-acc, acc)/100)
-    self.y_speed = (((math.sqrt(2)*vel)/2) * math.atan(abs(y-self.y)/abs(x-self.x))) * (1 + random.randint(-acc, acc)/100)
+    self.y_speed = (((math.sqrt(2)*vel)/2) * math.atan(abs(y-int(self.y))/abs(x-int(self.x)))) * (1 + random.randint(-acc, acc)/100)
     self.x_speed = r*(self.z_speed-self.y_speed) * (1 + random.randint(-acc, acc)/100)
     self.held = False
 
