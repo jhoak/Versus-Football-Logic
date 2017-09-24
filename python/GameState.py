@@ -49,7 +49,7 @@ class GameState:
     with open('state2.txt','w') as stwo:
       stwo.write("DECLARE DEFENSE\n\n")
       for pl in o_players:
-        stwo.write(pl.get_stat_csv()+"\n")
+        stwo.write(pl.get_position_csv()+"\n")
       stwo.write("\n")
       with open(defense.roster) as rtwo:
         for line in rtwo:

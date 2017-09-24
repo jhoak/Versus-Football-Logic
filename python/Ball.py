@@ -32,8 +32,8 @@ class Ball:
     dist = math.sqrt(math.pow(x-self.x, 2)+math.pow(y-self.y, 2))
     vel = math.sqrt(dist/self.gravity) * self.gravity
     self.z_speed = (math.sqrt(2)*vel)/2
-    self.x_speed = ((math.sqrt(2)*vel)/2) * math.atan(abs(y-self.y)/abs(x-self.x))
-    self.y_speed = self.z_speed-self.x_speed
+    self.y_speed = ((math.sqrt(2)*vel)/2) * math.atan(abs(y-self.y)/abs(x-self.x))
+    self.x_speed = self.z_speed-self.y_speed
 
   def snap(self):
     self.throw(-7000, 0)
