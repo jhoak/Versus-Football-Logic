@@ -85,6 +85,7 @@ function run_ai()
     game_state = game_state_l,
     commands = {},
     tostring = tostring,
+    tonumber = tonumber,
     memory = memory
   }
 

@@ -1,17 +1,17 @@
 DECLARE DEFENSE
 
+Domisquith Bartolimeo,1,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,2,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,3,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,4,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,5,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,6,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,7,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,8,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,9,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,10,100,100,100,100,100,100,0,0
+Domisquith Bartolimeo,11,100,100,100,100,100,100,0,0
 
-Domisquith Bartolimeo,1,100,100,100,100,100,100
-Domisquith Bartolimeo,2,100,100,100,100,100,100
-Domisquith Bartolimeo,3,100,100,100,100,100,100
-Domisquith Bartolimeo,4,100,100,100,100,100,100
-Domisquith Bartolimeo,5,100,100,100,100,100,100
-Domisquith Bartolimeo,6,100,100,100,100,100,100
-Domisquith Bartolimeo,7,100,100,100,100,100,100
-Domisquith Bartolimeo,8,100,100,100,100,100,100
-Domisquith Bartolimeo,9,100,100,100,100,100,100
-Domisquith Bartolimeo,10,100,100,100,100,100,100
-Domisquith Bartolimeo,11,100,100,100,100,100,100
 Domisquith Bartolimeo,12,100,100,100,100,100,100
 Domisquith Bartolimeo,13,100,100,100,100,100,100
 Domisquith Bartolimeo,14,100,100,100,100,100,100

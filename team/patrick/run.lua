@@ -36,7 +36,7 @@ function pick(already_picked_nums,cmp)
   best = nil
   best_score = 0
   for key,value in pairs(game_state["players"]) do
-    if not already_picked_nums["number"] then
+    if not already_picked_nums[value["number"]] then
       if cmp(value) > best_score then
         best = value["number"]
         best_score = cmp(value)
@@ -83,7 +83,7 @@ function offense_run()
 end
 
 function offense_pass()
-  tick = tonumber(memory.split(",")[1])
+  tick = tonumber(split(memory,",")[2])
   for key,value in pairs(game_state["players"]) do
     --People at > -3000 move ahead, always.
     if(value["x"] > -3000) then
@@ -141,7 +141,8 @@ end
 
 if game_state["status"] == "MOVE OFFENSE" then
   print(memory)
-  play = split(memory,",")[0]
+  play = split(memory,",")[1]
+  print(play)
   if(play == "run") then
     offense_run()
   elseif(play == "pass") then
@@ -151,8 +152,8 @@ if game_state["status"] == "MOVE OFFENSE" then
   end
 end
 
-if game_state["status"] == "DECLARE DEFENSE" then
-  -- TODO
+if game_state["status"] == "MOVE DEFENSE" then
+  
   for key,value in pairs(game_state["players"]) do
     commands[value["number"]] = {"MOVE","F"}
   end
