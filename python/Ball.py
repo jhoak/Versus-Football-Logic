@@ -29,6 +29,7 @@ class Ball:
     self.z_speed = z
 
   def throw(self, x, y):
+    r=1
     if x < 0:
       r = -1
     dist = math.sqrt(math.pow(x-int(self.x), 2)+math.pow(y-int(self.y), 2))
