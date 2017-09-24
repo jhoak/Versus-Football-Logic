@@ -1,4 +1,4 @@
-import math
+import math, random
 
 class Player:
   
@@ -24,6 +24,7 @@ class Player:
     self.diving = True
     self.collidable = True
     self.can_catch = False
+    self.disabletime = 0
 
   def move(self, dirc, mod, opposite_team):
     mag = self.speed*mod
@@ -49,6 +50,8 @@ class Player:
       co = self.collide((self.x, self.y),opposite_team_coords, (-1*dmag,-1*dmag))
 
     self.x, self.y = co[0]
+    if co[1] is not None:
+      opposite_team[co[1][0]].disable(3, self.hit)
 
   def dive(self, dirc):
     if 'N' in dirc:
@@ -107,6 +110,14 @@ class Player:
 
     return csv[:-1]
 
+  def update(self):
+    self.disabletime -= .1
+
+  def disable(self, time, stre):
+    random.randint(0,100)
+    if abs(self.hit-stre) > random.randint(0,100):
+      self.disabletime = 3
+    if 
 
   def get_stat_with_pos_csv(self):
     csv = ""

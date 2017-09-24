@@ -76,7 +76,7 @@ class GameState:
     # ------------- During Play --------------
     # Offense State
     p = 99
-    while self.ball_in_play:
+    while self.ball.in_play:
       p+=1
       with open('vid/state'+str(p)+'.txt','w') as sth:
         sth.write("MOVE OFFENSE\n\n")
@@ -113,7 +113,18 @@ class GameState:
           self.action(line, 'def', offense, defense)
 
       # Update the field
-      self.ball.update(o_players, d_players)
+      c = self.ball.update(o_players, d_players)
+      if c == 'td':
+        offense.score += 7
+        self.yardline = 20
+        self.down = 1
+        offense.hasball = False
+        defense.hasball = True
+
+      elif c:
+        self.yardline += int(c)/1000
+        self.down += 1
+
 
       # Tick the Clock
       self.clock.update()

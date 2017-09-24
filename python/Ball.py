@@ -14,6 +14,8 @@ class Ball:
 
   gravity = 10.72835
 
+  in_play = False
+
   def __init__(self):
     pass
 
@@ -30,7 +32,7 @@ class Ball:
 
   def throw(self, x, y):
     r=1
-    if x < 0:
+    if int(x) < 0:
       r = -1
     dist = math.sqrt(math.pow(int(x)-int(self.x), 2)+math.pow(int(y)-int(self.y), 2))
     vel = math.sqrt(dist/self.gravity) * self.gravity
@@ -38,15 +40,24 @@ class Ball:
       acc = 50-(int(self.held.passing)/4)
     else:
       acc = 0
-    self.z_speed = ((math.sqrt(2)*vel)/2) * (1 + random.randint(-acc, acc)/100)
-    self.y_speed = (((math.sqrt(2)*vel)/2) * math.atan(abs(int(y)-int(self.y))/abs(int(x)-int(self.x)))) * (1 + random.randint(-acc, acc)/100)
+    self.z_speed = ((vel)/2) * (1 + random.randint(-acc, acc)/100)
+    self.y_speed = (((math.sqrt(2)*vel)) * math.atan(abs(int(y)-int(self.y))/abs(int(x)-int(self.x)))) * (1 + random.randint(-acc, acc)/100)
     self.x_speed = r*(self.z_speed-self.y_speed) * (1 + random.randint(-acc, acc)/100)
     self.held = False
 
   def snap(self, dir):
     self.throw(dir*7000, 0)
+    self.in_play = True
 
   def update(self, o_players, d_players):
+
+    if self.held:
+      if self.held.
+      if self.held.disabletimer > 0:
+        self.in_play = True
+
+    return held.x
+
 
     if not self.held:
 
@@ -70,7 +81,7 @@ class Ball:
       if self.z <= 0:
         self.setvector(0,0,0)
         self.z = 0
-
+    return False
 
 
   def check_if_near(self, x, y):    
