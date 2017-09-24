@@ -71,7 +71,7 @@ class GameState:
         d_players.append(defense.players[int(line[2])-1])
 
     self.ball_in_play = True
-    self.ball.set_position(50, 0, 0.1)
+    self.ball.set_position(-50, 0, 0.1)
     self.ball.snap(-1)
     # ------------- During Play --------------
     # Offense State
