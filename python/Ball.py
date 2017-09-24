@@ -29,6 +29,8 @@ class Ball:
     self.z_speed = z
 
   def throw(self, x, y):
+    if x < 0:
+      r = -1
     dist = math.sqrt(math.pow(x-self.x, 2)+math.pow(y-self.y, 2))
     vel = math.sqrt(dist/self.gravity) * self.gravity
     if self.held:
@@ -37,7 +39,7 @@ class Ball:
       acc = 0
     self.z_speed = ((math.sqrt(2)*vel)/2) * (1 + random.randint(-acc, acc)/100)
     self.y_speed = (((math.sqrt(2)*vel)/2) * math.atan(abs(y-self.y)/abs(x-self.x))) * (1 + random.randint(-acc, acc)/100)
-    self.x_speed = (self.z_speed-self.y_speed) * (1 + random.randint(-acc, acc)/100)
+    self.x_speed = r*(self.z_speed-self.y_speed) * (1 + random.randint(-acc, acc)/100)
     self.held = False
 
   def snap(self, dir):
