@@ -72,7 +72,7 @@ class GameState:
 
     self.ball_in_play = True
     self.ball.set_position(0, 0, 0.1)
-    self.ball.snap(1)
+    self.ball.snap(-1)
     # ------------- During Play --------------
     # Offense State
     p = 99
@@ -163,7 +163,7 @@ class GameState:
 
   def get_direction(self, side):
     #TODO: Conditions
-    if side == 'off':
+    if side == 'offsssssssss':
       return -1
     else:
       return 1
