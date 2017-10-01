@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+    	<link rel="icon" href="https://getbootstrap.com/docs/3.3/favicon.ico">
+
+    	<title>Versus Football - This Season's Schedule</title>
+
+    	<!-- Bootstrap core CSS -->
+    	<link href="/media/bootstrap.min.css" rel="stylesheet">
+
+    	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    	<link href="/media/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    	<!-- Custom styles for this template -->
+    	<link href="/media/cover.css" rel="stylesheet">
+
+    	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    	<script src="/media/ie-emulation-modes-warning.js.download"></script>
+
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    </head>
+	<body>
+		<h1>The schedule for the current season:</h1>
+		<h3>(Note: Each game is roughly 5 minutes long.)</h3>
+		<p>&nbsp;</p>
+
+		{% if battles %}
+		<table>
+			<tr>
+				<th>Home</th>
+				<th>Away</th>
+			</tr>
+			{% for battle in battles %}
+			<tr>
+				<th>{{ team.team1 }}</th>
+				<th>{{ team.team2 }}</th>
+			</tr>
+			{% endfor %}
+		</table>
+		{% else %}
+		<h3><font color="red">No teams are playing this season. Go make a team!</font></h3>
+		{% endif %}
+
+		<p>&nbsp;</p>
+		<a href="dash/index.html" class="btn btn-lg btn-default">Homepage</a>
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="/media/jquery.min.js.download"></script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	    <script src="/media/bootstrap.min.js.download"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/media/ie10-viewport-bug-workaround.js.download"></script>
+	</body>
+</html>
